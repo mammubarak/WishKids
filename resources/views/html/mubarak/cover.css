@@ -26,7 +26,6 @@ a:hover {
 html,
 body {
     height: 100%;
-    
 }
 
 body {
@@ -42,7 +41,7 @@ body {
 }
 
 .cover-container {
-    max-width: 42em;
+    max-width: auto;
 }
 
 /*
@@ -57,7 +56,7 @@ body {
 }
 
 .nav-masthead .nav-link {
-    padding: 0.25rem 0;
+    padding: 0.25rem 0.25rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
     background-color: transparent;
@@ -121,29 +120,30 @@ body {
     bottom: 0;
     left: 0;
     z-index: -99;
-  }
-  .video-foreground,
-  .video-background iframe {
+}
+.video-foreground,
+.video-background iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
-  }
-  @media (min-aspect-ratio: 16/9) {
+}
+@media (min-aspect-ratio: 16/9) {
     .video-foreground {
-      height: 300%;
-      top: -100%;
+        height: 300%;
+        top: -100%;
     }
-  }
-  @media (max-aspect-ratio: 16/9) {
+}
+@media (max-aspect-ratio: 16/9) {
     .video-foreground {
-      width: 300%;
-      left: -100%;
+        width: 300%;
+        left: -100%;
     }
-  }
-  .left-align{
-      text-align: justify;
-      float: left;
-  }
+}
+.cover-heading {
+    word-wrap: break-word;
+    float: left;
+    position: relative;
+}
