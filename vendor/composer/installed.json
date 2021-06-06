@@ -1664,6 +1664,7 @@
             "install-path": "../laravel/tinker"
         },
         {
+
             "name": "laravel/ui",
             "version": "v3.3.0",
             "version_normalized": "3.3.0.0",
@@ -1725,6 +1726,7 @@
             "install-path": "../laravel/ui"
         },
         {
+
             "name": "league/commonmark",
             "version": "1.6.2",
             "version_normalized": "1.6.2.0",

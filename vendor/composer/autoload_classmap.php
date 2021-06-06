@@ -1529,6 +1529,7 @@ return array(
     'Illuminate\\Foundation\\Application' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Application.php',
     'Illuminate\\Foundation\\Auth\\Access\\Authorizable' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/Authorizable.php',
     'Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php',
+
     'Illuminate\\Foundation\\Auth\\AuthenticatesUsers' => $vendorDir . '/laravel/ui/auth-backend/AuthenticatesUsers.php',
     'Illuminate\\Foundation\\Auth\\ConfirmsPasswords' => $vendorDir . '/laravel/ui/auth-backend/ConfirmsPasswords.php',
     'Illuminate\\Foundation\\Auth\\EmailVerificationRequest' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Auth/EmailVerificationRequest.php',
@@ -1539,6 +1540,7 @@ return array(
     'Illuminate\\Foundation\\Auth\\ThrottlesLogins' => $vendorDir . '/laravel/ui/auth-backend/ThrottlesLogins.php',
     'Illuminate\\Foundation\\Auth\\User' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Auth/User.php',
     'Illuminate\\Foundation\\Auth\\VerifiesEmails' => $vendorDir . '/laravel/ui/auth-backend/VerifiesEmails.php',
+
     'Illuminate\\Foundation\\Bootstrap\\BootProviders' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php',
     'Illuminate\\Foundation\\Bootstrap\\HandleExceptions' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php',
     'Illuminate\\Foundation\\Bootstrap\\LoadConfiguration' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php',
@@ -2082,6 +2084,7 @@ return array(
     'Laravel\\Tinker\\Console\\TinkerCommand' => $vendorDir . '/laravel/tinker/src/Console/TinkerCommand.php',
     'Laravel\\Tinker\\TinkerCaster' => $vendorDir . '/laravel/tinker/src/TinkerCaster.php',
     'Laravel\\Tinker\\TinkerServiceProvider' => $vendorDir . '/laravel/tinker/src/TinkerServiceProvider.php',
+
     'Laravel\\Ui\\AuthCommand' => $vendorDir . '/laravel/ui/src/AuthCommand.php',
     'Laravel\\Ui\\AuthRouteMethods' => $vendorDir . '/laravel/ui/src/AuthRouteMethods.php',
     'Laravel\\Ui\\ControllersCommand' => $vendorDir . '/laravel/ui/src/ControllersCommand.php',
@@ -2091,6 +2094,7 @@ return array(
     'Laravel\\Ui\\Presets\\Vue' => $vendorDir . '/laravel/ui/src/Presets/Vue.php',
     'Laravel\\Ui\\UiCommand' => $vendorDir . '/laravel/ui/src/UiCommand.php',
     'Laravel\\Ui\\UiServiceProvider' => $vendorDir . '/laravel/ui/src/UiServiceProvider.php',
+
     'League\\CommonMark\\Block\\Element\\AbstractBlock' => $vendorDir . '/league/commonmark/src/Block/Element/AbstractBlock.php',
     'League\\CommonMark\\Block\\Element\\AbstractStringContainerBlock' => $vendorDir . '/league/commonmark/src/Block/Element/AbstractStringContainerBlock.php',
     'League\\CommonMark\\Block\\Element\\BlockQuote' => $vendorDir . '/league/commonmark/src/Block/Element/BlockQuote.php',
