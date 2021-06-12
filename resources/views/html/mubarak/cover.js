@@ -1,7 +1,11 @@
-const menuToggle = document.querySelector('.toggle');
-const showcase = document.querySelector('.showcase');
+  
+let container = document.getElementById('container')
 
-menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('active');
-  showcase.classList.toggle('active');
-})
+toggle = () => {
+	container.classList.toggle('sign-in')
+	container.classList.toggle('sign-up')
+}
+
+setTimeout(() => {
+	container.classList.add('sign-in')
+}, 200)
