@@ -19,6 +19,15 @@
         <!-- add icon link -->
 
         <link rel="icon" href="4.png" type="image/icon type" class="logod" />
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".menu-toggle").click(function () {
+                    $(".menu-toggle").toggleClass("active");
+                    $("nav").toggleClass("active");
+                });
+            });
+        </script>
     </head>
     <body>
         <section class="showcase">
@@ -32,7 +41,21 @@
                             class="shadowfilter logoc"
                     /></a>
                 </div>
-                <div class="toggle shadowfilter"></div>
+
+                <div class="menu-toggle shadowfilter">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="shadowfilter">Home</a></li>
+                        <li><a href="#" class="shadowfilter">Video</a></li>
+                        <li><a href="#" class="shadowfilter">Product</a></li>
+                        <li><a href="#" class="shadowfilter">About</a></li>
+                        <li><a href="#" class="shadowfilter">Myprofile</a></li>
+                    </ul>
+                </nav>
             </header>
 
             <video src="intro.mp4" autoplay loop muted></video>
@@ -77,15 +100,7 @@
                 </li>
             </ul>
         </section>
-        <div class="menu shadowfilter">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">MyProfile</a></li>
-            </ul>
-        </div>
+
         <script type="text/javascript" src="cover.js"></script>
 
         <!-- Optional JavaScript; choose one of the two! -->
