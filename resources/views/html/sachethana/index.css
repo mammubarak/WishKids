@@ -94,3 +94,49 @@ a:hover {
     color: rgb(6, 139, 139);
     text-shadow: 1px 1px 2px #fff;
 }
+#feed{
+    display: flex;
+    width:1250px;
+    height:100%;
+    padding:10px 10px;
+}
+#community{
+    background-color: white;
+    width:300px;
+    height: 600px;
+    padding: 10px 10px 10px 10px;
+    margin-right: 10px;
+    border:solid white 2px; 
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+#posting{
+    background-color: white;
+    width:400px;
+    height: 90px;
+    padding: 4px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0.1px 0.1px black;
+}
+#news_feed{
+    background-color: white;
+    width:500px;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px; 
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+#right{
+    background-color: white;
+    width:400px;
+    height: 600px;  
+    border:solid white 2px; 
+    padding: 10px 10px 10px 10px;
+    margin-right: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+}
