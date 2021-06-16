@@ -1,9 +1,11 @@
 #top_bar{
+    position: fixed;
     height: 50px;
     width:1260px;
     background-color: rgb(6, 139, 139);
     color: white;
     top: 0;
+    z-index: 1;
 }
 #search_box{
     width: 300px;
