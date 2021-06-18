@@ -121,6 +121,25 @@ h4{
     box-shadow: 1px 1px 1px 1px black;
 }
 
+#home{
+    text-shadow: 2px 2px 3px black, 5px 0 45px black, 5px 0 5px green;
+    padding-top: 20px;
+    margin-left: 20px;
+   margin-top: 50px;
+    background-color: yellowgreen;
+    width: 70px;
+    background-size: 50px 50px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50px;
+    position: fixed;
+}
+#home a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black, 5px 0 45px black, 5px 0 5px green;
+}
 .community_img{
     width: 150px;
     height: 100px;
