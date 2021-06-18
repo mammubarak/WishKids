@@ -1,3 +1,6 @@
+body{
+    overflow-x:hidden;
+}
 #top_bar{
     position: fixed;
     height: 50px;
@@ -72,8 +75,7 @@ h4{
     margin-top: -15px;
 }
 
-.nav{
-    
+#nav{
     background-color: rgb(6, 139, 139);
     margin-top: 10px;
     width: 850px;
@@ -83,8 +85,11 @@ h4{
     align-items: center;
     border-radius: 5px;
     border-bottom: 1px solid white;
+    position: sticky;
+    top: 50px;
 }
-.nav a{
+
+#nav a{
     color: white;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000;
@@ -95,8 +100,8 @@ h4{
     padding-bottom: 10px; 
     border-radius: 30px;
 }
-.nav a:hover {
-    background-color: white;
+#nav a:hover {
+    background-color: rgba(255, 255, 255, 0.219);
     color: rgb(6, 139, 139);
     text-shadow: 1px 1px 2px #fff;
 }
@@ -160,6 +165,12 @@ textarea{
     font-size: 14px;
     border-radius: 4px;
     width: 50px;
+}
+#post_button:hover{
+    background-color:rgba(6, 139, 139, 0.219) ;
+    color: rgb(6, 139, 139);
+    font-weight: bold;
+    border: 0.5px solid rgb(6, 139, 139);
 }
 #news_feed{
     background-color: white;
