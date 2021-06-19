@@ -131,3 +131,10 @@ span{
     color: black;
     font-size: 20;
 }
+#register{
+    left: 450px;
+}
+#register input{
+    color: white;
+    font-size: 20;
+}
