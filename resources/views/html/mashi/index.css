@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+     background:rgba(33, 167, 100, 0.867) ;
+}
+
+.text_r1{
+    text-align: center !important;
+}
+.card_footer{
+    background-color:rgb(91, 238, 123);
+    text-decoration: none;
+    color: rgb(20, 19, 19);
+}
+
+
