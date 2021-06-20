@@ -372,26 +372,26 @@ textarea{
         }
         #feed{
             display: flex;
-            width:1250px;
+            width:798px;
             height:100%;
             padding:10px 10px;
         }
         #community{
             background-color: white;
-            width:300px;
-            height: 660px;
-            padding: 10px 10px 10px 10px;
-            margin-right: 10px;
-            border:solid white 2px; 
-            border-radius: 5px;
-            box-shadow: 1px 1px 1px 1px black;
+            width:150px;
+            height: 900px;
+            padding: 5px 5px 5px 5px;
+            margin-right: 5px;
+            border:solid white 1px; 
+            border-radius: 3px;
+            box-shadow: 1px 0.5px 1px 1px black;
         }
 
         #home{
             text-shadow: 2px 2px 3px black, 5px 0 45px black, 5px 0 5px green;
             padding-top: 10px;
             margin-left: 1150px;
-        margin-top: 5px;
+            margin-top: 5px;
             background-color: rgb(6, 139, 139);
             width: 60px;
             background-size: 50px 50px;
@@ -407,8 +407,8 @@ textarea{
             text-shadow: 2px 2px 3px black, 5px 0 45px black, 5px 0 5px rgb(6, 139, 139);
         }
         .community_img{
-            width: 150px;
-            height: 100px;
+            width: 120px;
+            height: 90px;
             margin: 4px;
             padding-top: 20px;
             float: left;
@@ -419,6 +419,8 @@ textarea{
             font-size: 15px;
             font-weight: bold;
             color: navy;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
         #posting{
             background-color: white;
