@@ -44,7 +44,7 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -60,7 +60,7 @@ header {
     height: 50px;
     background: transparent;
     filter: invert(1);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     cursor: pointer;
@@ -400,72 +400,54 @@ section .box1 {
 /*==========scrollbar finish========*/
 
 /*==========Footer start============*/
-footer
-{
+footer {
     position: relative;
     width: 100%;
-    height:auto ;
-    padding:50px 100px ;
+    height: auto;
+    padding: 50px 100px;
     background: #52ac68;
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-footer .foot-container
-{
+footer .foot-container {
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
-footer .foot-container .sec 
-{
-    margin-right:30px;
-
+footer .foot-container .sec {
+    margin-right: 30px;
 }
-footer .foot-container .sec.aboutus
-{
+footer .foot-container .sec.aboutus {
     width: 40%;
-
 }
-footer .foot-container h2
-{
+footer .foot-container h2 {
     position: relative;
-    color:#fff ;
+    color: #fff;
     font-weight: 500;
     margin-bottom: 15px;
-
 }
-footer .foot-container h2:before
-{
-    content: '';
+footer .foot-container h2:before {
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
     width: 50px;
     height: 2px;
     background: #195249;
-
 }
-footer p
-{
+footer p {
     color: rgb(0, 0, 0);
-    
 }
-.sci 
-{
-    margin-top:20px ;
+.sci {
+    margin-top: 20px;
     display: flex;
-
 }
-.sci li
-{
+.sci li {
     list-style: none;
-
 }
-.sci li a 
-{
+.sci li a {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -476,127 +458,94 @@ footer p
     margin-right: 10px;
     border-radius: 10px;
     text-decoration: none;
-
 }
-.sci li a:hover
-{
-    background:transparent;
+.sci li a:hover {
+    background: transparent;
     transform: scale(1.95);
-} 
-.sci li a .bx 
-{
+}
+.sci li a .bx {
     color: #fff;
     font-size: 20px;
-
-
 }
-.quickLinks
-{
+.quickLinks {
     position: relative;
     width: 25%;
-
 }
-.quickLinks ul li
-{
+.quickLinks ul li {
     list-style: none;
 }
-.quickLinks ul li a
-{
+.quickLinks ul li a {
     color: rgb(0, 0, 0);
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 6px;
     display: inline-block;
-
 }
-.quickLinks ul li a:hover
-{
+.quickLinks ul li a:hover {
     color: rgba(4, 5, 4, 0.8);
     font-style: italic;
     transform: scale(1.15);
-    
 }
-.contact
-{
-    width: calc(35% - 60px) ;
+.contact {
+    width: calc(35% - 60px);
     margin-right: 0 !important;
 }
-.contact .info
-{
+.contact .info {
     position: relative;
-
 }
-.contact .info li
-{
+.contact .info li {
     display: flex;
     margin-bottom: 16px;
-
 }
-.contact .info li span:nth-child(1)
-{
+.contact .info li span:nth-child(1) {
     color: rgb(10, 8, 8);
     font-size: 20px;
     margin-right: 10px;
 }
-.contact .info li span
-{
+.contact .info li span {
     color: rgb(0, 0, 0);
-
 }
-.contact .info li a
-{
+.contact .info li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-
 }
-.contact .info li a:hover
-{
+.contact .info li a:hover {
     text-decoration: italic;
     transform: scale(1.15);
-    
 }
-.srilanka
-{
+.srilanka {
     width: 36px;
     height: 24px;
 }
-.copyrightText
-{
+.copyrightText {
     width: 100%;
     background: #0a690e;
     padding: 8px 100px;
     text-align: center;
     color: #000;
 }
-@media (max-width: 991px)
-{
-    footer 
-    {
-        padding: 40px;   
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
     }
-    footer .foot-container
-    {
+    footer .foot-container {
         flex-direction: column;
     }
-    footer .foot-container .sec
-    {
+    footer .foot-container .sec {
         margin-right: 0;
         margin-bottom: 40px;
     }
-    footer .foot-container .sec.aboutus, .quickLinks, .contact
-    {
+    footer .foot-container .sec.aboutus,
+    .quickLinks,
+    .contact {
         width: 100%;
-
     }
-    .copyrightText
-    {
+    .copyrightText {
         padding: 8px 40px;
     }
-
 }
 
 /*==========Footer finish============*/
-
 
 @keyframes animate {
     18.1%,
