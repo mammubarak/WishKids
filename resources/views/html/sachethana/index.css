@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100%;
+}
 body{
     overflow-x:hidden;
 }
@@ -72,35 +79,34 @@ h2{
 h4{
     text-align: center;
     color: navy;
-    margin-top: -15px;
+    margin-top: 5px;
 }
 
 #nav{
     background-color: white;
     margin-top: 5px;
     width: 850px;
-    height:30px;
-    padding-top: 1px;
+    height:17px;
+    padding-top: 15px;
     padding-bottom: 20px;
     align-items: center;
-    border-bottom-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom: 1px solid black; 
+    border-bottom:1px  solid black;
+    border-left:1px  solid black;
+    border-right:1px  solid black; 
 }
-
 #nav a{
     color: white;
     text-decoration: none;
     text-shadow: 1px 1px 2px #000;
     font-size: 20px;
-    padding-top: 10px;  
+    padding-top: 10px;
     padding-right: 40px; 
     padding-left: 40px;
     padding-bottom: 10px; 
-    border-radius: 30px;  
+    border-radius: 10px;  
 }
 #nav a:hover {
-    background-color: rgba(255, 255, 255, 0.219);
+    background-color: rgba(196, 187, 187, 0.24);
     color: rgb(6, 139, 139);
     text-shadow: 1px 1px 2px #fff;
 }
@@ -162,6 +168,7 @@ h4{
     margin-bottom: 20px;
     margin-left: 60px;
     border-radius: 5px;
+    border:0.5px solid black;
     box-shadow: 1px 1px 0.1px 0.1px black;
 }
 textarea{
@@ -259,4 +266,267 @@ textarea{
     font-size: 15px;
     font-weight: bold;
     color: navy;
+}
+@media (max-width: 798px){
+    #top_bar{
+        position: fixed;
+        height: 50px;
+        width:798px;
+        background-color: rgb(6, 139, 139);
+        color: white;
+        top: 0;
+        z-index: 1;
+        border-bottom: 1px solid white;
+    }
+    #search_box{
+        width: 150px;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+        padding: 4px;
+        font-size: 10px;
+        background-image: url(search.png);
+        background-repeat: no-repeat;
+        background-position:right;
+    }
+    .top{
+        width:798px;
+        height:380px;
+        background-color: white;
+        border-bottom: white 1px solid;
+        }
+        #content{
+            background-color: white;
+            width:798px;
+            min-height:2000px;  
+        }
+        .cover{
+            width:625px;
+            height:400px;
+            background-image: url(freepic.jpg);
+            background-size: 625px 350px;
+            background-repeat: no-repeat;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }      
+        #change_cover{
+            width:20px;
+            height:20px;
+        }
+        #cam{
+            width:20px;
+            height:20px; 
+            margin-top: 310px;
+            margin-left: 575px;
+        }
+        #profile{
+            width:130px;
+            height:130px;
+            background-image: url(profile.jpg);
+            border-radius: 250px;
+            position:absolute;
+            background-size: 130px 130px;
+            margin-left:250px ;
+            margin-top: 150px;
+            border:solid 2px white; 
+        }
+        h2{
+            text-align: center;
+            margin-top: -15px;
+            color: white;
+        }
+        h4{
+            text-align: center;
+            color: navy;
+            margin-top: 5px;
+            }       
+        #nav{
+            background-color: white;
+            margin-top: 5px;
+            margin-right: 100px;
+            width: 450px;
+            height:20px;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            align-items: center;
+            border-bottom:1px  solid black;
+            border-left:1px  solid black;
+            border-right:1px  solid black; 
+        }
+        #nav a{
+            color: white;
+            text-decoration: none;
+            text-shadow: 1px 1px 2px #000;
+            font-size: 17px;
+            padding-top: 5px;
+            padding-right: 10px; 
+            padding-left: 10px;
+            padding-bottom: 10px; 
+            border-radius: 5px;  
+        }
+        #nav a:hover {
+            background-color: rgba(196, 187, 187, 0.24);
+            color: rgb(6, 139, 139);
+            text-shadow: 1px 1px 2px #fff;
+        }
+        #feed{
+            display: flex;
+            width:798px;
+            height:100%;
+            padding:10px 10px;
+        }
+        #community{
+            background-color: white;
+            width:150px;
+            height: 900px;
+            padding: 5px 5px 5px 5px;
+            margin-right: 5px;
+            border:solid white 1px; 
+            border-radius: 3px;
+            box-shadow: 1px 0.5px 1px 1px black;
+        }
+
+        #home{
+            text-shadow: 2px 2px 3px black, 5px 0 45px black, 5px 0 5px green;
+            padding-top: 10px;
+            margin-left: 1150px;
+            margin-top: 5px;
+            background-color: rgb(6, 139, 139);
+            width: 60px;
+            background-size: 50px 50px;
+            height: 30px;
+            text-align: center;
+            box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+            position: fixed;
+            border-radius: 3px;
+        }
+        #home a{
+            color: white;
+            text-decoration: none;
+            text-shadow: 2px 2px 3px black, 5px 0 45px black, 5px 0 5px rgb(6, 139, 139);
+        }
+        .community_img{
+            width: 120px;
+            height: 90px;
+            margin: 4px;
+            padding-top: 20px;
+            float: left;
+            border: 1px black solid;
+        }
+        .community_list{
+            clear: both;
+            font-size: 15px;
+            font-weight: bold;
+            color: navy;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        #posting{
+            background-color: white;
+            width:400px;
+            height: 90px;
+            padding: 4px;
+            margin-bottom: 20px;
+            margin-left: 60px;
+            border-radius: 5px;
+            border:0.5px solid black;
+            box-shadow: 1px 1px 0.1px 0.1px black;
+        }
+        textarea{
+            width:100%; 
+            height: 50px;
+            border: none;
+            font-family: tahoma;
+            font-size: 15px;
+            text-align: center;
+            color: navy;
+            border-radius: 5px;
+        }
+        #post_button{
+            float: right;
+            background-color: rgb(6, 139, 139);
+            border: none;
+            color: oldlace;
+            padding: 4px;
+            font-size: 14px;
+            border-radius: 4px;
+            width: 50px;
+        }
+        #post_button:hover{
+            background-color:rgba(6, 139, 139, 0.219) ;
+            color: rgb(6, 139, 139);
+            font-weight: bold;
+            border: 0.5px solid rgb(6, 139, 139);
+        }
+        #news_feed{
+            background-color: white;
+            width:500px;
+            height: 200px;
+            margin-bottom: 10px;
+            padding: 10px 10px 10px 10px; 
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        #post_area{
+            padding: 4px 4px 4px 4px;
+            font-size: 15px;
+            display: flex;
+            border: 1px solid black;  
+            margin-bottom: 20px; 
+            font-size: 15px;
+        }
+        #creative-post{
+            background-color: white;
+            width:400px;
+            height: 250px;  
+            border:solid white 2px; 
+            padding: 10px 10px 10px 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px black;
+            margin-bottom: 10px;  
+        }
+        #creative-post p{
+        display: flex;
+        }
+        #my-post{
+            background-image: url(post.jpg);
+            background-size:200px;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 170px;
+            margin: 5px;
+            padding-top: 20px;
+            float: left;
+            border: 1px black solid;
+        }
+        #people{
+            background-color: white;
+            width:300px;
+            height: 660px;
+            padding: 10px 10px 10px 10px;
+            margin-right: 10px;
+            margin-left: 50px;
+            border:solid white 2px; 
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        #you-know{
+            background-image: url(community5.jpg);
+            background-size: 150px 100px;
+            width: 150px;
+            height: 100px;
+            margin: 4px;
+            padding-top: 20px;
+            float: left;
+            border: 1px black solid;
+        }
+        #people-list{
+            clear: both;
+            font-size: 15px;
+            font-weight: bold;
+            color: navy;
+        }
 }
