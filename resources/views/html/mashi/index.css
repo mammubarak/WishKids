@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
+.body{
      background:rgba(33, 167, 100, 0.867) ;
 }
 
@@ -10,9 +10,9 @@ body{
     text-align: center !important;
 }
 .card_footer{
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(91, 238, 123);
     text-decoration: none;
-    color: black;
+    color: rgb(20, 19, 19);
 }
 
 
