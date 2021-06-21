@@ -1,0 +1,21 @@
+:root{
+    --purple:#8e44ad;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container .heading{
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    color:var(--purple);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing:  .2rem;
+    text-align: center;
+    text-shadow: 0   .3rem  .5rem rgba(0, 0, 0, .5);
+}
