@@ -20,17 +20,42 @@
 
 
 
-
-
-
+<style>
+    body {
+      background-color: rgb(242, 247, 241);
+      font-family: cursive;
+    }
+    
+    .glow {
+      font-size: 80px;
+      color: rgb(159, 235, 129);
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px rgb(8, 92, 8), 0 0 20px rgb(11, 160, 36), 0 0 30px #4bd123, 0 0 40px #1bd452, 0 0 50px #26c75c, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 20px rgb(32, 29, 29), 0 0 30px #53e46b, 0 0 40px #594dff, 0 0 50px #0ce92a, 0 0 60px #4e26bb, 0 0 70px #684dff, 0 0 80px #ff4da6;
+      }
+    }
+    </style>
 
 </head>
+
 <body>
     <img id="home" src="4.png" width="4" height="4">
 
+    <h1 class="glow">WISHKIDS  VIDEO GALLERT</h1>
+     
+
 <div class="container">
 
-    <div class="heading"> Wishkids video Gallery</div>
+    <div class="heading"> <h1> time for nature   </h1>
+     </div>
     <div class="video-container">
         <div class="video">
             <video src="0.mp4"muted></video>
