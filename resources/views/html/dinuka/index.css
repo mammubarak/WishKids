@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -119,16 +120,16 @@ section #text span {
     position: relative;
     padding: 100px;
     background: #094b65;
+    display: grid;
+    place-items: center center;
 }
 .sec h2{
     font-size: 3.5em;
     color: #fff;
     margin-bottom: 10px;
+    font-family: 'Benne', serif;
 }
-.sec p {
-    font-size: 1em;
-    color: #fff;
-}
+
 .sec .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -143,6 +144,11 @@ section #text span {
 .container{
     position: relative;
     clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
 }
 .details{
     padding: 20px 10px;
