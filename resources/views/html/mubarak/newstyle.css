@@ -280,7 +280,7 @@ nav ul li a:hover {
 @media (max-width: 798px) {
     .showcase,
     .showcase header {
-        padding: 40px;
+        padding: 40px
     }
     .text h2 {
         font-size: 2.5em;
@@ -291,22 +291,27 @@ nav ul li a:hover {
     }
     .a1,
     .a2,.a3 {
-        width: 80px;
+        width: 90px;
         font-size: 15px;
         text-align: center;
         padding-left: 3px;
         padding-right: 3px;
+        
+    }
+    .showcase{
+        overflow-x: hidden;
     }
  
     nav {
         position: absolute;
         top: 0;
-        right: -95%;
+        right: -110%;
         height: 50px;
         transition: 0.5s;
     }
     nav.active {
         right: -30px;
+    
     }
     nav ul {
         margin: 0;
@@ -341,6 +346,15 @@ nav ul li a:hover {
     }
     .menu-toggle {
         left: 80%;
+        position: fixed;
+    }
+    * {
+       
+        margin-bottom: -10px;   
+    }
+    .logo
+    {
+        padding-top: 15px
     }
 }
 /*============form section===========*/
@@ -676,7 +690,7 @@ nav ul li a:hover {
     
     
 }
-@media (max-width: 991px) {
+@media (max-width: 798px) {
     .footer {
         padding: 40px;
     }
@@ -694,6 +708,30 @@ nav ul li a:hover {
     }
     .copyrightText {
         padding: 8px 40px;
+        height: 45px;
+    }
+    .copyrightText p {
+        margin: 6px;
+    }
+    .form-box{
+        width: 380px;
+        height: 450px;
+        position: relative;
+        margin: 35% auto;
+        background-color: rgba(253, 253, 255, 0.1);
+        padding: 10px;
+        
+        overflow: hidden;
+        border-radius: 50px;
+    }
+   .toggle-btn{
+        
+        
+        position: relative;
+        justify-content: center;
+        font-size: 15px;
+        margin: 1.5px;
+        
     }
 }
 
