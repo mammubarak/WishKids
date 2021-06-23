@@ -6,185 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
-
-<div class="wrapper">
-    <div id="top_bar">
-        <div style="width: 800px; margin-left:200px; margin-top: -25px; font-size: 30px;text-shadow: 1px 1px 2px #000;" id="logo">
-            Wishkids&nbsp;&nbsp;<input type="text" id="search_box" placeholder="Search For Community">
-        <img src="profile.jpg" id="top-img" style="margin-top: 25px;">
-        </div>
-        <center>
-            <div id="nav">
-                <ul>
-                    <a href="index.html">Timeline</a>
-                    <a href="#creative-post">My Post</a>
-                    <a href="#">Community</a>
-                    <a href="#">Badges</a>
-                </ul>
+    
+    <div class="container">
+        <!----------------option menu------------------------------------->
+        <div class="options-menu">
+            <div class="options-center">
+                <div class="logo">
+                   <a href="#"><img src="4.png"></img></a> 
+                </div>
+                <div class="option">
+                    <div><a href=""><i class="fa fa-home"></i>Home</a></div>
+                    <div><a href=""><i class="fa fa-hashtag"></i>Explore</a></div>
+                    <div><a href=""><i class="fa fa-bell"></i>Notification</a></div>
+                    <div><a href=""><i class="fa fa-envelope-o"></i>Message</a></div>
+                    <div><a href=""><i class="fa fa-user-o"></i>Profile</a></div>
+                 
+                    <div><button>Post</button></div>
+                </div>
             </div>
-        </center>
-    </div>
-    <div id="content">
-        <div class="top" id="top">
-           <div class="cover">
-               <div id="profile"></div>
-               <a href="#" id="change_cover"><img src="cam.jpg" id="cam"></a>
-               <h2>Jane Smith</h2>
-               <h4>(Web developer)</h4>
-            </div>  
         </div>
+        <!----------------end option menu------------------------------------->
+        <!----------------Content menu---------------------------------------->
+        <div class="content-menu">
+            <div class="prefer">
+                <span>
+                    <a href="#tweet">Home</a>
+                </span>
+                <span>
+                    <i class="fa fa-star-o"></i>
+                </span>
+            </div>
+            <div class="you-tweet-other-tweet" id="tweet">
+                <div class="your-tweet">
+                    <div class="profile-message">
+                        <span><img src="profile.jpg" alt="profile"></span>
+                        <span><input type="text" placeholder="What's on your mind"></span>
+                    </div>
+                    <div class="add-extra">
+                        <div class="images-more">
+                            <span><a href="#"><i class="fa fa-picture-o"></i></a></span>
+                            <span><a href="#"><i class="fa fa-bars"></i></span>
+                        </div>
+                        <span><button>Post</button></span>
+                    </div>
+                </div>
+                <!------------------------other tweet----------------------------------->
+                <div class="others-tweet">
+                    <div class="profile-msg">
+                        <div class="others-profile">
+                            <img src="Community2.png" alt="community2">
+                        </div>
+                        <div class="name-msg">
+                            <span>The Earth<b><i class="fa fa-check-circle-o">@theerth . <small>Yesterday</small></i></b></span>
+                            <div class="msg">
+                                <p>Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+                        <div class="more-option">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="image-video">
+                        <img src="community3.jpg" alt="community3">
+                    </div>
+                    <div class="yor-reaction">
+                        <div class="like"><i class="fa fa-heart-o"></i><p>12</p></div>
+                        <div class="comment"><i class="fa fa-comment-o"></i><p>12</p></div>
+                        <div class="share"><i class="fa fa-share"></i><p>12</p></div>
+                    </div>
+                </div>
+                <!------------------------end of each person---------------------------------------->
+                <!------------------------other tweet----------------------------------->
+                <div class="others-tweet">
+                    <div class="profile-msg">
+                        <div class="others-profile">
+                            <img src="Community2.png" alt="community2">
+                        </div>
+                        <div class="name-msg">
+                            <span>The Earth<b><i class="fa fa-check-circle-o">@theerth.<small>Yesterday</small></i></b></span>
+                            <div class="msg">
+                                <p>Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+                        <div class="more-option">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="image-video">
+                        <img src="community3.jpg" alt="community3">
+                    </div>
+                    <div class="yor-reaction">
+                        <div class="like"><i class="fa fa-heart-o"></i><p>12</p></div>
+                        <div class="comment"><i class="fa fa-comment-o"></i><p>12</p></div>
+                        <div class="share"><i class="fa fa-share"></i><p>12</p></div>
+                    </div>
+                </div>
+                <!------------------------end of each person---------------------------------------->
+            <!------------------------other tweet----------------------------------->
+            <div class="others-tweet">
+                <div class="profile-msg">
+                    <div class="others-profile">
+                        <img src="Community2.png" alt="community2">
+                    </div>
+                    <div class="name-msg">
+                        <span>The Earth<b><i class="fa fa-check-circle-o">@theerth.<small>Yesterday</small></i></b></span>
+                        <div class="msg">
+                            <p>Lorem ipsum dolor sit. </p>
+                        </div>
+                    </div>
+                    <div class="more-option">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="image-video">
+                    <img src="community3.jpg" alt="community3">
+                </div>
+                <div class="yor-reaction">
+                    <div class="like"><i class="fa fa-heart-o"></i><p>12</p></div>
+                    <div class="comment"><i class="fa fa-comment-o"></i><p>12</p></div>
+                    <div class="share"><i class="fa fa-share"></i><p>12</p></div>
+                </div>
+            </div>
+            <!------------------------end of each person---------------------------------------->
         
-        <div id="feed">
-            <div id="community"><font size="+2" color="grey">Your Communities</font><hr>
-                <div class="community_list">
-                    <img src="community1.jpg" class="community_img"><br>
-                    wild life
-                    <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <hr>
-                <div class="community_list">
-                    <img src="community2.png" class="community_img"><br>
-                    The Earth
-                    <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <hr>
-                <div class="community_list">
-                    <img src="community3.jpg" class="community_img"><br>
-                    Save Earth
-                    <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <hr>
-                <div class="community_list">
-                    <img src="community4.jpg" class="community_img"><br>
-                    Bio
-                    <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div id="mid">
-                <div id="posting">
-                    <div style="padding: 5px; background-color: white;">
-                        <textarea placeholder="Whats on your mind"></textarea>
-                        <input id="post_button" type="submit" value="POST">
-                    </div>
-                </div>
-                <div id="news_feed">
-                    <div id="post_area">
-                        <div class="post">
-                            <img src="community1.jpg" style="width: 180px; height: 180px; margin-left: 20px; margin-top: 5px; margin-right: 10px;">
-                        </div>
-                        <div class="adding">
-                            <div style="font-weight: bold; color: violet;" id="topic">Wild Life.</div>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, maxime eaque! Dolores consequatur deleniti quae, sint magni sapiente, vel ipsa quo et expedita quidem dignissimos blanditiis facilis nostrum reprehenderit illo!
-                            <br><br>
-                            <a href="#" id="like">Like</a> . <a href="#" id="comment">Comment</a> . &nbsp;<span style="color:grey">june 10 2021</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="news_feed">
-                    <div id="post_area">
-                        <div class="post">
-                            <img src="community2.png" style="width: 180px; height: 180px; margin-left: 20px; margin-top: 5px; margin-right: 10px;">
-                        </div>
-                        <div class="adding">
-                            <div style="font-weight: bold; color: violet;">The Earth.</div>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, maxime eaque! Dolores consequatur deleniti quae, sint magni sapiente, vel ipsa quo et expedita quidem dignissimos blanditiis facilis nostrum reprehenderit illo!
-                            <br><br>
-                            <a href="#" id="like">Like</a> . <a href="#" id="comment">Comment</a> . &nbsp;<span style="color:grey">june 11 2021</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="news_feed">
-                    <div id="post_area">
-                        <div class="post">
-                            <img src="community3.jpg" style="width: 230px; height: 180px; margin-left: 20px; margin-top: 5px; margin-right: 10px;">
-                        </div>
-                        <div class="adding">
-                            <div style="font-weight: bold; color: violet;">Save Earth.</div>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, maxime eaque! Dolores consequatur deleniti quae, sint magni sapiente, vel ipsa quo et expedita quidem dignissimos blanditiis facilis nostrum reprehenderit illo!
-                            <br><br>
-                            <a href="#" id="like">Like</a> . <a href="#" id="comment">Comment</a> . &nbsp;<span style="color:grey">june 12 2021</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="news_feed">
-                    <div id="post_area">
-                        <div class="post">
-                            <img src="community4.jpg" style="width: 200px; height: 180px; margin-left: 20px; margin-top: 5px; margin-right: 10px;">
-                        </div>
-                        <div class="adding">
-                            <div style="font-weight: bold; color: violet;">Bio.</div>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, maxime eaque! Dolores consequatur deleniti quae, sint magni sapiente, vel ipsa quo et expedita quidem dignissimos blanditiis facilis nostrum reprehenderit illo!
-                            <br><br>
-                            <a href="#" id="like">Like</a> . <a href="#" id="comment">Comment</a> . &nbsp;<span style="color:grey">june 13 2021</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="news_feed">
-                    <div id="post_area">
-                        <div class="post">
-                            <img src="community2.png" style="width: 180px; height: 180px; margin-left: 20px; margin-top: 5px; margin-right: 10px;">
-                        </div>
-                        <div class="adding">
-                            <div style="font-weight: bold; color: violet;">The Earth.</div>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, maxime eaque! Dolores consequatur deleniti quae, sint magni sapiente, vel ipsa quo et expedita quidem dignissimos blanditiis facilis nostrum reprehenderit illo!
-                            <br><br>
-                            <a href="#" id="like">Like</a> . <a href="#"id="comment">Comment</a> . &nbsp;<span style="color:grey">june 11 2021</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="news_feed">
-                    <div id="post_area">
-                        <div class="post">
-                            <img src="community4.jpg" style="width: 200px; height: 180px; margin-left: 20px; margin-top: 5px; margin-right: 10px;">
-                        </div>
-                        <div class="adding">
-                            <div style="font-weight: bold; color: violet;">Bio.</div>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, maxime eaque! Dolores consequatur deleniti quae, sint magni sapiente, vel ipsa quo et expedita quidem dignissimos blanditiis facilis nostrum reprehenderit illo!
-                            <br><br>
-                            <a href="#" id="like">Like</a> . <a href="#" id="comment">Comment</a> . &nbsp;<span style="color:grey">june 13 2021</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="home"><a href="#top">Home</a></div>
-            <div id="right">
-                <div id="creative-post"><font size="+2" color="grey">Creative Post</font><hr>
-                   <div id="post">
-                    <div id="my-post"></div>
-                    <p style="color: navy; font-weight: bold;">Jane Smith</p>
-                    <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                </div>
-                <div id="people"><font size="+2" color="grey">Communities You may Know</font><hr>
-                    <div id="people-list">  
-                        <div id="you-know"></div>
-                        <p style="color: navy; font-weight: bold;">Jane Smith</p>
-                        <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur a Lorem ipsum dolor sit amet akdyhmxh hf consedipisicing elit.</p>
-                    </div>
-                    <hr>
-                    <div id="people-list">
-                        <div id="you-know"></div>
-                        <p style="color: navy; font-weight: bold;">Jane Smith</p>
-                        <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur  Lorem ipsum dolor sit amet akdyhmxh hf adipisicing elit.</p>
-                    </div>
-                    <hr>
-                    <div id="people-list">  
-                        <div id="you-know"></div>
-                        <p style="color: navy; font-weight: bold;">Jane Smith</p>
-                        <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur a Lorem ipsum dolor sit amet akdyhmxh hf consedipisicing elit.</p>
-                    </div>
-                    <hr>
-                    <div id="people-list" class="stop-here">
-                        <div id="you-know"></div>
-                        <p style="color: navy; font-weight: bold;">Jane Smith</p>
-                        <p style="color: rgb(26, 194, 20);">Lorem ipsum dolor sit amet consectetur  Lorem ipsum dolor sit amet akdyhmxh hf adipisicing elit.</p>
-                    </div>
-                </div>
             </div>
         </div>
+        <!---------------end content menu------------------------------------->
     </div>
-</div> 
+
+
+
+    
+  
 </body>
 </html>
