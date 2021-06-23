@@ -5,11 +5,10 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
-    display: grid;
-    grid-template-columns: 23% 43% 34%;
+    display: flex;
 }
 .options-menu{
-    width: 320px;
+    width: 300px;
     border-right: 1px solid rgb(224, 220, 220);
     height: 760px;
 }
@@ -43,6 +42,7 @@
     color: green;
     padding: 5% 5% 5% 5%;
     background: whitesmoke;
+    border: 1px green solid;
 }
 .option button{
     padding: 15px 50px;
@@ -58,12 +58,12 @@
 .option button:hover{
     background: white;
     color: green;
-    border: 1px solid green;
+    border: 2px solid green;
     transition: 0.1s;
 }
 /*--------------------Content menu----------------------------*/
 .content-menu{
-    width: 100%;
+    width: 550px;
     border-right: 1px solid rgb(233, 229, 229);
     border-left: 1px solid rgb(233, 229, 229);
     background: white;
@@ -102,10 +102,10 @@
     overflow-y: auto;
 }
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: white; 
   }
 ::-webkit-scrollbar-thumb {
     background: green; 
@@ -246,6 +246,7 @@
     border-radius: 20px;
     width: 90%;
     max-height: 280px;
+    border: 1px solid black;
 }
 .your-reaction{
     margin: 5% 0 5% 15%;
@@ -279,4 +280,164 @@
 }
 .share:hover{
     color: greenyellow;
+}
+
+
+/*---------------------------------------trending menu-------------------------------------*/
+.trending-menu{
+    width: 420px;
+}
+.trending-center{
+    width: 85%;
+    margin: 0 0 0 50px;
+}
+.search{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    top: 0px;
+    background: white;
+    align-items: center;
+    z-index: 1000;
+}
+.search input{
+    width: 100%;
+    height: 40px;
+    margin: 1% 0 0 0;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background: rgb(235, 234, 234);
+    padding: 0 10px 0 50px;
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+}
+.search span{
+    position: absolute;
+    left: 7%;
+    top:8px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(122, 122, 122);
+}
+.trending, .follow{
+    width: 100%;
+    background: rgb(235, 234, 234);
+    border-radius: 20px;
+    margin: 0 0 20px 0;
+    overflow-y: hidden;
+    max-height: 333px;
+}
+.trending:hover, .follow:hover{
+    overflow-y: auto;
+}
+.header{
+    width: 100%;
+    height: 55px;
+    color: green;
+    border-bottom: 1px solid rgb(201, 199, 199);
+}
+.header p{
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.trends, .persons{
+    width: 100%;
+}
+.trend{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.trend-msg{
+    margin: 15px 0 0 20px;
+    color: black;
+}
+.trend-name{
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+.trend-name p, .trend-with p{
+    font-size: 12px;
+    opacity: 0.6;
+}
+.trend-with{
+    margin: 0 0 20px 0;
+    cursor: pointer;
+}
+.subject p{
+    font-size: 15px;
+    font-weight: 600;
+    text-justify: inter-word;
+    word-wrap: break-word;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+.trend-picture{
+    padding: 20px 0;
+}
+.trend-picture img{
+    width:90px;
+    height: 70px;
+    border-radius: 20px;
+}
+.trend:hover, .person:hover{
+    background: white;
+}
+.show-more{
+    padding: 20px 20px;
+}
+.show-more a{
+    text-decoration: none;
+    color: green;
+}
+.show-more:hover{
+    background: white;
+    border-radius: 0 0 20px 20px;
+}
+.person{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.person-profile{
+    padding: 0 0 0 10px;
+}
+.person-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.person-profile img:hover{
+    opacity: 1;
+}
+.followers-name p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.name h3{
+    font-size: 16px;
+}
+.name p{
+    opacity: 0.6;
+    padding: 5px 0 0 0;
+}
+.send-follow-request button{
+    padding: 5px 20px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background: green;
+    border-radius: 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.send-follow-request button:hover{
+    background: white;
+    color: green;
+    border: 2px solid green;
 }
