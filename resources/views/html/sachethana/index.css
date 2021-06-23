@@ -37,6 +37,7 @@
 .option div a i{
     padding: 0 18% 0 0;
     font-weight: 100;
+    
 }
 .option div a:hover{
     color: green;
@@ -96,6 +97,7 @@
 }
 .you-tweet-other-tweet{
     max-height: 700px;
+    overflow-y: hidden;
 }
 /*-------------------scroll bar----------------*/
 .you-tweet-other-tweet:hover{
@@ -441,3 +443,44 @@
     color: green;
     border: 2px solid green;
 }
+
+/*------------------------make responsive-------------------------------------------*/
+
+@media(max-width:950px){
+    .option span{
+        display: none;
+    }
+    .option button{
+        padding: 10px 10px;
+    }
+    .options-center{
+        margin-left: -50%;
+    }
+    .container{
+        display: flex;
+    }
+    .option-center{
+        width: 99.6%;
+    }
+    .option div a i{
+        padding: 0;
+        border-radius: 50%;
+    }
+    .profile-msg{
+        grid-template-columns: 25% 40% 35%;
+    }
+}
+ @media(max-width:560px){
+     .options-menu{
+         display: none;
+     }
+     .trending-menu{
+         display: none;
+     }
+     .container{
+         grid-template-columns: 100%;
+     }
+     .profile-msg{
+         grid-template-columns: 20% 60% 20%;
+     }
+ }
