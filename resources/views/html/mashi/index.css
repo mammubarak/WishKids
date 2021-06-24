@@ -59,7 +59,9 @@ html{
     background-color:#141414 !important;
     font-family: cursive;
   }
-  
+   
+/* glow effect */
+
   .glow {
     font-size: 80px;
     color: rgb(159, 235, 129);
