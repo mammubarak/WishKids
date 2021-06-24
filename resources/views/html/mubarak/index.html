@@ -3,7 +3,7 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Bootstrap CSS 
         <link
@@ -22,6 +22,7 @@
      
 
         <link rel="stylesheet" href="newstyle.css" />
+        
         
        
         <title>WishKids</title>
@@ -44,7 +45,7 @@
         <section class="showcase" id="">
             <header>
                 <div class="logo">
-                    <a href="newindex.html"
+                    <a href="index.html"
                         ><img
                             src="4.png"
                             alt="logo"
@@ -84,8 +85,11 @@
                     eveniet!
             </p>
 
-                <a href="#" class="a1 shadowfilter">Register</a>
-                <a href="#" class="a2 shadowfilter">LogIn</a>
+               
+               
+                
+                <a href="#footer" class="a3 shadowfilter loginbtn">Contact Us</a>
+                <a href="#full-page" class="a2 shadowfilter loginbtn" onclick="document.getElementById('login-form').style.display='block'">Get In</a>
             </div>
         </div>
 
@@ -111,45 +115,70 @@
                     /></a>
                 </li>
             </ul>
+            
         </section>
-       <section class="formsec">
-        <img src="formbackground.jpg" alt="formbackground" class="formbg">
-
-       <div class="box">
-           <div class="container">
-               <div class="form">
-                <h2>Login Form</h2>
-                <!--<form action="">
-                    <div class="inputBox">
-                        <input type="text" placeholder="Username">
-                    </div>
-                    <div class="inputBox">
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" placeholder="Login">
-                    </div>
-                    <p class="forget">Forgot Password ?<a href="#">Click Here</a></p>
-                    <p class="forget">Don't have an account ?<a href="#">Sign up</a></p>
+       <section class="formsec">     
+             
+                 <!--==============================form start=================================================-->
+                 <div class="full-page" id="full-page">
                    
-
-                </form>-->
-               </div>
-           </div>
-       </div>
-
-            </form>
-        </div>
-        
-       
-
-
-
-
-
-
+                    <div id="login-form" class="login-page">
+                        <div class="form-box">
+                            <div class="button-box">
+                                <div id="btn"></div>
+                               
+                                <button type="button" onclick="login()" class="toggle-btn shadowfilter ">Register</button>
+                                 <button type="button" onclick="register()" class="toggle-btn  shadowfilter">Log In</button>
+                            </div>
+                            <div class="log"><form id="login" class=" input-group-register">
+                             
+                                <input type="text" class="input-field" placeholder="First Name" required>
+                                <input type="text" class="input-field" placeholder="Last Name" required>
+                                <input type="email" class="input-field" placeholder="Email Id" required>
+                                <input type="password" class="input-field" placeholder="Enter Password" required>
+                                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                                <button type="submit" class="submit-btn shadowfilter">Register</button>
+                              
+                            </form></div>
+            
+                            <div class="reg"><form id="register" class="input-group-login">
+                                <input type="text" class="input-field" placeholder="Email Id" required>
+                                <input type="password" class="input-field" placeholder="Enter Password" required>
+                                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                                <button type="submit" class="submit-btn shadowfilter">Log In</button>
+                            </form></div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                     var x=document.getElementById('login');
+                    var y=document.getElementById('register');
+                    var z=document.getElementById('btn');
+                    function register(){
+                        x.style.left='-400px';
+                        y.style.left='50px';
+                        z.style.left='110px'; 
+                    }
+                    function login(){
+                        x.style.left='50px'; 
+                        y.style.left='450px'; 
+                        z.style.left='0px';  
+                    }
+                </script>
+                <script>
+                    var modal = document.getElementById('login-form');
+                    window.onclick = function(event){
+                        if(event.target == modal){
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+              
+                 <!--==============================form end===================================================-->
        </section>
-       <footer>
+       <div class="footer" id="footer">
+       
         <div class="foot-container">
             <div class="sec aboutus">
                 <h2>
@@ -203,13 +232,14 @@
 
 
             </div>
-            <div id="top"><a href="#showcase">Home</a></div>
+           <!-- <div id="top"><a href="#showcase">Home</a></div>-->
         </div>
 
-    </footer>
+
     <div class="copyrightText">
         <p>Copyright© 2021 by EcoWish®.<br> All Rights Reserved.</p>
     </div>
+
 
         <!-- Optional JavaScript; choose one of the two! -->
 

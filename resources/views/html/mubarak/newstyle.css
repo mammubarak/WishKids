@@ -218,6 +218,22 @@ nav ul li a:hover {
     transition: 0.2s;
     background: rgba(255, 255, 255, 0.15);
 }
+.a3 {
+    display: inline-block;
+    font-size: 1.5em;
+
+    padding: 3px 8px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+    
+    letter-spacing: 1.5px;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+    
+    transition: 0.2s;
+    background: rgba(255, 255, 255, 0.15);
+}
 
 .text a:hover {
     background: #fff;
@@ -264,7 +280,7 @@ nav ul li a:hover {
 @media (max-width: 798px) {
     .showcase,
     .showcase header {
-        padding: 40px;
+        padding: 40px
     }
     .text h2 {
         font-size: 2.5em;
@@ -274,22 +290,28 @@ nav ul li a:hover {
         width: 250px;
     }
     .a1,
-    .a2 {
-        width: 80px;
+    .a2,.a3 {
+        width: 90px;
         font-size: 15px;
         text-align: center;
         padding-left: 3px;
         padding-right: 3px;
+        
     }
+    .showcase{
+        overflow-x: hidden;
+    }
+ 
     nav {
         position: absolute;
         top: 0;
-        right: -95%;
+        right: -110%;
         height: 50px;
         transition: 0.5s;
     }
     nav.active {
         right: -30px;
+    
     }
     nav ul {
         margin: 0;
@@ -324,42 +346,142 @@ nav ul li a:hover {
     }
     .menu-toggle {
         left: 80%;
+        position: fixed;
+    }
+    * {
+       
+        margin-bottom: -10px;   
+    }
+    .logo
+    {
+        padding-top: 15px
     }
 }
 /*============form section===========*/
-.formsec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    z-index: -100;
-}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-section .box1 {
-    width: 300px;
-    height: 300px;
-    background: crimson;
-}
-.formbg {
-    height: 100vh;
+/*for background image*/
+.full-page{
     width: 100vw;
-    object-fit: fill;
+    height: 100vh;
+    background-image: url(formbackground.jpg);
+   object-fit: cover;
+   background-size: 100% 100%;
+    
     position: absolute;
 }
-.box {
-    position: relative;
+/*for nav bar*/
+
+
+
+#login-form{
+    display: none;
 }
-.container {
+.form-box{
+    width: 380px;
+    height: 450px;
     position: relative;
-    width: 1176px;
-    min-height: 490px;
-    background: rgba(255, 255, 255, 0.1);
+    margin: 10% auto;
+    background-color: rgba(253, 253, 255, 0.1);
+    padding: 10px;
+    
+    overflow: hidden;
+    border-radius: 35px;
+}
+.button-box{
+    width: 220px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #0303021f;
     border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative; 
+    color: #fff;
+    font-size: 1.1em;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: rgba(63, 255, 4, 0.425);
+    border-radius: 30px;
+    transition: .5s;
+    
+    
+}
+.input-group-login{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    
+}
+.input-group-register{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+  
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0px 8px 0;
+    margin: 5px 0 2px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(199, 198, 198);
+    outline: none;
+    background: transparent;
+    color: #fff;
 }
 
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: rgba(47, 255, 0, 0.322);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.1em;
+}
+.check-box{
+    margin: 14px 10px 29px 2px;
+}
+.formsec span{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    bottom: 68px;
+    position: absolute;
+
+    opacity: 60%;
+}
+#login{
+    left: 50px;
+}
+#login input{
+    color: rgb(255, 255, 255);
+    font-size: 20;
+}
+#register{
+    left: 450px;
+}
+#register input{
+    color: white;
+    font-size: 20;
+}
 /*=====form finish=============*/
 /*========scroll bar===*/
 
@@ -401,8 +523,8 @@ section .box1 {
 /*==========scrollbar finish========*/
 
 /*==========Footer start============*/
-footer {
-    position: relative;
+.footer  {
+    position:relative;
     width: 100%;
     height: auto;
     padding: 50px 100px;
@@ -410,8 +532,12 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: initial;
+    object-position: bottom;
+    z-index: 10000;
+    margin-top: 100vh;
 }
-footer:before {
+.footer:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -434,25 +560,25 @@ footer:before {
     z-index: 1000;
 }
 
-footer .foot-container {
+.footer .foot-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
 }
-footer .foot-container .sec {
+.footer .foot-container .sec {
     margin-right: 30px;
 }
-footer .foot-container .sec.aboutus {
+.footer .foot-container .sec.aboutus {
     width: 40%;
 }
-footer .foot-container h2 {
+.footer .foot-container h2 {
     position: relative;
     color: #fff;
     font-weight: 500;
     margin-bottom: 15px;
 }
-footer .foot-container h2:before {
+.footer .foot-container h2:before {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -461,7 +587,7 @@ footer .foot-container h2:before {
     height: 2px;
     background: #195249;
 }
-footer p {
+.footer p {
     color: rgb(0, 0, 0);
 }
 .sci {
@@ -542,30 +668,70 @@ footer p {
     height: 24px;
 }
 .copyrightText {
-    width: 100%;
+    width: 100vw;
     background: #0a690e;
     padding: 8px 100px;
     text-align: center;
-    color: #000;
+    
+    border-radius: 35px;
+    margin-top: 50px;
+    position: relative ;
+    
+    
+    
 }
-@media (max-width: 991px) {
-    footer {
+.copyrightText p{
+    
+    
+    font-size: 10px;
+    color: #fff;
+    opacity: 55%;
+    
+    
+    
+}
+@media (max-width: 798px) {
+    .footer {
         padding: 40px;
     }
-    footer .foot-container {
+    .footer .foot-container {
         flex-direction: column;
     }
-    footer .foot-container .sec {
+    .footer .foot-container .sec {
         margin-right: 0;
         margin-bottom: 40px;
     }
-    footer .foot-container .sec.aboutus,
+    .footer .foot-container .sec.aboutus,
     .quickLinks,
     .contact {
         width: 100%;
     }
     .copyrightText {
         padding: 8px 40px;
+        height: 45px;
+    }
+    .copyrightText p {
+        margin: 6px;
+    }
+    .form-box{
+        width: 380px;
+        height: 450px;
+        position: relative;
+        margin: 35% auto;
+        background-color: rgba(253, 253, 255, 0.1);
+        padding: 10px;
+        
+        overflow: hidden;
+        border-radius: 50px;
+    }
+   .toggle-btn{
+        
+        
+        position: relative;
+        justify-content: center;
+        font-size: 15px;
+        margin: 1.5px;
+        
     }
 }
 
