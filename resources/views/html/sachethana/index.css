@@ -6,43 +6,44 @@
 }
 .container{
     display: flex;
+    width: 100%;
 }
 .options-menu{
-    width: 300px;
+    width: 15%;
     border-right: 1px solid rgb(224, 220, 220);
     height: 760px;
 }
 .options-center{
-    width: 75%;
+    width: 70%;
     margin: 0;
 }
 .logo{
-    padding: 4% 0 4% 37%;
+    padding: 4% 0 4% 40%;
 }
 .logo a img{
-    width: 45px;
-    height: 70px;
+    width: 30px;
+    height: 50px;
 }
 .option div a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600px;
     padding: 12px 8px;
     border-radius: 30px;
-    color: brown;
+    color: green;
 }
 .option div{
-    padding:2% 0 8% 10%;
+    padding:2% 0 20% 1%;
 }
 .option div a i{
     padding: 0 18% 0 0;
     font-weight: 100;
-    
+    margin-left: 30%;    
 }
 .option div a:hover{
-    color: green;
-    padding: 5% 5% 5% 5%;
-    background: whitesmoke;
+    color: white;
+    padding: 5% 10% 5% 10%;
+    background: green;
     border: 1px green solid;
 }
 .option button{
@@ -65,7 +66,7 @@
 
 /*--------------------Content menu----------------------------*/
 .content-menu{
-    width: 550px;
+    width: 650px;
     border-right: 1px solid rgb(233, 229, 229);
     border-left: 1px solid rgb(233, 229, 229);
     background: white;
@@ -347,7 +348,7 @@
 }
 /*---------------------------------------trending menu-------------------------------------*/
 .trending-menu{
-    width: 420px;
+    width: 350px;
 }
 .trending-center{
     width: 85%;
@@ -490,7 +491,7 @@
     padding: 5px 0 0 0;
 }
 .send-follow-request button{
-    padding: 5px 20px;
+    padding: 5px 10px;
     outline: none;
     border: 1px solid white;
     color: white;
@@ -508,20 +509,24 @@
 /*------------------------make responsive-------------------------------------------*/
 
 @media(max-width:950px){
-    .option span{
-        display: none;
+    .options-menu{
+        width: 100px;
     }
     .option button{
+        margin-left: 20px;
         padding: 10px 10px;
     }
     .options-center{
         margin-left: -50%;
     }
+    .content-menu{
+        width: 400px;
+    }
     .container{
         display: flex;
     }
     .option-center{
-        width: 99.6%;
+        width: 80%;
     }
     .option div a i{
         padding: 0;
@@ -530,18 +535,78 @@
     .profile-msg{
         grid-template-columns: 25% 40% 35%;
     }
+    .trending-menu{
+        display: none;
+    }
 }
+
  @media(max-width:560px){
-     .options-menu{
-         display: none;
-     }
-     .trending-menu{
-         display: none;
-     }
-     .container{
-         grid-template-columns: 100%;
-     }
-     .profile-msg{
-         grid-template-columns: 20% 60% 20%;
-     }
+    .option-menu{
+        width: 20%;
+    }
+    .option-center{
+        width: 70%;
+        margin-left: 20%;
+    }
+        
+    .logo{
+        padding: 4% 0 4% 40%;
+    }
+    .logo a img{
+        width: 30px;
+        height: 50px;
+        margin-left: 50px;
+    }
+    .option div a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 600px;
+        padding: 12px 8px;
+        border-radius: 30px;
+        color: green;
+    }
+    .option div{
+        padding:2% 0 20% 20%;
+    }
+    .option div a i{
+        padding: 0 0 0 65%;
+        font-weight: 100;
+        margin-left: 30%;    
+    }
+    .option div a:hover{
+        color: white;
+        padding: 5% 10% 5% 2%;
+        background: green;
+        border: 1px green solid;
+    }
+    .option button{
+        padding: 15px 50px;
+        border-radius: 30px;
+        outline: none;
+        background: green;
+        color: white;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .option button:hover{
+        background: white;
+        color: green;
+        border: 2px solid green;
+        transition: 0.1s;
+    }
+        .trending-menu{
+            display: none;
+        }
+        .content-menu{
+            width: 80%;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+        }
+        .profile-msg{
+            grid-template-columns: 20% 60% 20%;
+        }
  }
