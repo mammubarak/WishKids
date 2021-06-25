@@ -155,7 +155,7 @@ nav ul li a:hover {
 
 .text {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     width: 60vh;
     padding-top: 100px;
     margin-left: 0;
@@ -277,83 +277,6 @@ nav ul li a:hover {
     background-attachment: fixed;
 }
 
-@media (max-width: 798px) {
-    .showcase,
-    .showcase header {
-        padding: 40px;
-    }
-    .text h2 {
-        font-size: 2.5em;
-    }
-    .text p {
-        font-size: 1em;
-        width: 250px;
-    }
-    .a1,
-    .a2,
-    .a3 {
-        width: 90px;
-        font-size: 15px;
-        text-align: center;
-        padding-left: 3px;
-        padding-right: 3px;
-    }
-    .showcase {
-        overflow-x: hidden;
-    }
-
-    nav {
-        position: absolute;
-        top: 0;
-        right: -110%;
-        height: 50px;
-        transition: 0.5s;
-    }
-    nav.active {
-        right: -30px;
-    }
-    nav ul {
-        margin: 0;
-        padding: 0;
-        background: transparent;
-        display: flex;
-    }
-    nav ul li {
-        list-style: none;
-    }
-    nav ul li a {
-        display: block;
-        height: 50px;
-        line-height: 50px;
-        padding: 0 10px;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 10px;
-        transition: 0.5s;
-    }
-    .container {
-        width: 400px;
-        padding-left: 20px;
-        padding-right: 10px;
-    }
-    .formbg {
-        height: 100vh;
-        width: 100vw;
-        object-fit: fill;
-        position: absolute;
-        overflow-x: hidden;
-    }
-    .menu-toggle {
-        left: 80%;
-        position: fixed;
-    }
-    * {
-        margin-bottom: -10px;
-    }
-    .logo {
-        padding-top: 15px;
-    }
-}
 /*============form section===========*/
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
@@ -376,7 +299,7 @@ nav ul li a:hover {
     width: 380px;
     height: 450px;
     position: relative;
-    margin: 8.5% auto;
+    margin: 10% auto;
     background-color: rgba(253, 253, 255, 0.1);
     padding: 10px;
 
@@ -540,13 +463,12 @@ nav ul li a:hover {
 .formsec::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    top: 0px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, #004119, transparent);
-
-    z-index: 1000;
 }
 
 .footer .foot-container {
@@ -671,47 +593,6 @@ nav ul li a:hover {
     color: #fff;
     opacity: 55%;
 }
-@media (max-width: 798px) {
-    .footer {
-        padding: 40px;
-    }
-    .footer .foot-container {
-        flex-direction: column;
-    }
-    .footer .foot-container .sec {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-    .footer .foot-container .sec.aboutus,
-    .quickLinks,
-    .contact {
-        width: 100%;
-    }
-    .copyrightText {
-        padding: 8px 40px;
-        height: 45px;
-    }
-    .copyrightText p {
-        margin: 6px;
-    }
-    .form-box {
-        width: 380px;
-        height: 450px;
-        position: relative;
-        margin: 35% auto;
-        background-color: rgba(253, 253, 255, 0.1);
-        padding: 10px;
-
-        overflow: hidden;
-        border-radius: 50px;
-    }
-    .toggle-btn {
-        position: relative;
-        justify-content: center;
-        font-size: 15px;
-        margin: 1.5px;
-    }
-}
 
 /*==========Footer finish============*/
 
@@ -754,5 +635,167 @@ nav ul li a:hover {
         color: #195249;
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
             0 0 160px #fff, 0 0 320px #fff;
+    }
+}
+
+@media (max-width: 360px) {
+    .logoc {
+        height: 80px;
+        padding-top: 28px;
+    }
+    .showcase,
+    .showcase header {
+        padding: 10px;
+    }
+    .text h2 {
+        font-size: 2.3em;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
+    .text p {
+        font-size: 0.9em;
+        width: 195px;
+        margin-top: 0px;
+        border-radius: 15px;
+    }
+    .a1,
+    .a2,
+    .a3 {
+        width: 90px;
+        font-size: 15px;
+        text-align: center;
+        margin-top: -50px;
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-bottom: px;
+    }
+    .showcase {
+        overflow-x: hidden;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: -130%;
+        height: 50px;
+        border-radius: 25px;
+    }
+    nav.active {
+        right: -55px;
+        top: 10px;
+    }
+    nav ul li a {
+        height: 50px;
+        padding: 0 10px;
+        border-radius: 15px;
+    }
+    .container {
+        width: 400px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .formbg {
+        height: 100vh;
+        width: 100vw;
+        object-fit: fill;
+        position: absolute;
+        overflow-x: hidden;
+    }
+    .menu-toggle {
+        position: fixed;
+        right: 5px;
+        top: 10px;
+    }
+
+    .logo {
+        padding-top: 15px;
+    }
+    .social {
+        margin-bottom: -90px;
+    }
+    /*=======form=============*/
+    .full-page {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        background-size: 100% 100%;
+        position: absolute;
+    }
+
+    .form-box {
+        width: 80vw;
+        height: 65vh;
+        margin: 30% auto;
+        padding: 0px;
+        border-radius: 15px;
+    }
+    .button-box {
+        width: 60vw;
+        margin-top: 30px auto;
+        border-radius: 30px;
+    }
+    .toggle-btn {
+        padding: 8px 30px;
+        font-size: 1em;
+    }
+
+    .input-group-login {
+        top: 150px;
+        position: absolute;
+        width: 55vw;
+        transition: 0.5s;
+    }
+    .input-group-register {
+        top: 80px;
+        width: 50vw;
+    }
+    .input-group-login .input-field {
+        width: 50vw;
+        margin: 0px 0px 5px 0px;
+        font-size: 1em;
+    }
+    .input-group-register .input-field {
+        width: 50vw;
+        margin: 0px 0px 5px 0px;
+        font-size: 1em;
+    }
+
+    .submit-btn {
+        width: 80%;
+        padding: 10px 10px;
+        margin-bottom: 13px;
+        text-align: center;
+        font-size: 1.1em;
+    }
+    .input-group-login .submit-btn {
+        padding: 10px 10px;
+        margin-top: 13px;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    .check-box {
+        margin: 10px 5px 35px 0px;
+    }
+    .input-group-login .check-box {
+        margin: 10px 5px 0px 0px;
+    }
+
+    /*=========form finish========*/
+    .footer {
+        padding: 20px;
+        width: 100vw;
+    }
+    .footer .foot-container {
+        flex-direction: column;
+    }
+    .footer .foot-container .sec {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .footer .foot-container .sec.aboutus,
+    .quickLinks,
+    .contact {
+        width: 100%;
+        text-align: justify;
     }
 }
