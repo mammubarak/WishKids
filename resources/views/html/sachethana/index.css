@@ -8,6 +8,7 @@
     display: flex;
     width: 100%;
 }
+/*-----------------------------------option menu---------------------------*/
 .options-menu{
     width: 15%;
     border-right: 1px solid rgb(224, 220, 220);
@@ -69,8 +70,9 @@
     border: 2px solid green;
     transition: 0.1s;
 }
+/*-----------------------------------option menu---------------------------*/
 
-/*--------------------Content menu----------------------------*/
+/*-------------------- Home Content menu----------------------------*/
 .content-menu{
     width: 60%;
     border-right: 1px solid rgb(233, 229, 229);
@@ -286,13 +288,14 @@
 .share:hover{
     color: navy;
 }
+/*--------------------End Home Content menu----------------------------*/
 
-/*---------------profile page------------------*/
+/*---------------profile Content menu------------------*/
 .profile{
     width: 96.8%;
     min-height: 560px;
     background: white;
-    padding: 10px 0 10px 10px;
+    padding: 5% 0 5% 20px;
     border-bottom: 1px solid rgb(219, 216, 216);
 }
 .user-cover-img img{
@@ -303,13 +306,14 @@
 }
 .user-img{
     display: flex;
+    min-height: 100px;
 }
 .user-img img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin-top: -50px;
-    margin-left: 50px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: -35px;
+    margin-left: 7%;
     border: 2px solid white;
 }
 .user-img button{
@@ -317,10 +321,10 @@
     background: green;
     border: none;
     font-weight: bold;
-    width: 80px;
+    width: 12%;
     height: 40px;
-    margin-left: 190px;
-    margin-top: 2px;
+    margin-left: 45%;
+    margin-top: 1%;
     border-radius: 20px;
 }
 .user-img button:hover{
@@ -330,23 +334,25 @@
 }
 .user-name h3, .user-name p{
     color: green;
-    margin-left: 30px;
+    margin-left: 8%;
 }
 .bio{
     color: green;
     opacity: 0.7;
-    margin-left: 30px;
+    margin-left: 8%;
 }
 .bio i{
-    padding: 0 10px;
+    padding: 0 1%;
 }
 .bio i span{
     padding: 0 5px;
 }
 .bio span{
-    padding-left: 15px;
+    padding-left: 3%;
     font-size: 16px;
 }
+/*---------------End profile Content menu------------------*/
+
 /*---------------------------------------trending menu-------------------------------------*/
 .trending-menu{
     width: 25%;
@@ -504,6 +510,7 @@
     color: green;
     border: 2px solid green;
 }
+/*---------------------------------------End trending menu-------------------------------------*/
 
 /*------------------------make responsive-------------------------------------------*/
 
