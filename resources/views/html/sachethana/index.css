@@ -14,11 +14,11 @@
     height: 760px;
 }
 .options-center{
-    width: 70%;
+    width: 80%;
     margin: 0;
 }
 .logo{
-    padding: 4% 0 4% 40%;
+    padding: 4% 20% 4% 30%;
 }
 .logo a img{
     width: 30px;
@@ -28,15 +28,15 @@
     text-decoration: none;
     font-size: 30px;
     font-weight: 600px;
-    padding: 12px 8px;
+    padding: 4% 20% 4% 1%;
     border-radius: 30px;
     color: green;
 }
 .option div{
-    padding:2% 0 20% 1%;
+    padding:8% 0 20% 1%;
 }
 .option div a i{
-    padding: 0 18% 0 0;
+    padding: 0;
     font-weight: 100;
     margin-left: 30%;    
 }
@@ -46,8 +46,14 @@
     background: green;
     border: 1px green solid;
 }
+.option div a i:hover{
+    padding: 5% 10% 5% 10%;
+    font-weight: 100;
+    margin-left: 10%; 
+    margin-right: 10%;
+}
 .option button{
-    padding: 15px 50px;
+    padding:10% 30%;
     border-radius: 30px;
     outline: none;
     background: green;
@@ -66,9 +72,8 @@
 
 /*--------------------Content menu----------------------------*/
 .content-menu{
-    width: 650px;
+    width: 60%;
     border-right: 1px solid rgb(233, 229, 229);
-    border-left: 1px solid rgb(233, 229, 229);
     background: white;
 }
 .prefer{
@@ -94,11 +99,11 @@
     font-size: 20px;
 }
 .prefer span i{
-    font-size: 18px;
+    font-size: 20px;
     color: green;
 }
 .you-tweet-other-tweet{
-    max-height: 700px;
+    max-height: 1000px;
     overflow-y: hidden;
 }
 .you-tweet-other-tweet:hover{
@@ -123,27 +128,27 @@
     display: block;
     width: 90%;
     border-bottom: 1px solid rgb(233, 229, 229);
-    height: 120px;
-    margin-left: 10px;
+    height: 10%;
+    margin-left: 2%;
 }
 .profile-message{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 10px 15px;
+    padding: 2% 5% 1.5% 5%;
 }
 .profile-message img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 .profile-message:hover{
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .profile-message span input{
-    padding: 0 0 0 20px;
+    padding: 0 0 0 5%;
     font-size: 18px;
     color: black;
     letter-spacing: 0.5px;
@@ -156,13 +161,13 @@
     justify-content: space-between;
 }
 .images-more{
-    margin: 5px 0 5px 7px;
+    margin:1% 0 1% 5%;
 }
 .images-more span a{
     text-decoration: none;
     color: green;
     font-size: 20px;
-    padding: 8px 8px;
+    padding: 5px 8px;
     border-radius: 50%;
 }
 .images-more span a:hover{
@@ -172,7 +177,7 @@
 .add-extra span button{
     width: 60px;
     height: 40px;
-    margin: 0 30px 0 0;
+    margin: 0 30px 3px 0;
     padding: 5px 15px;
     border-radius: 30px;
     border: none;
@@ -193,15 +198,12 @@
 .profile-msg{
     display: grid;
     grid-template-columns: 12% 76% 12%;
-    margin: 20px 0 10px 0;
+    margin: 0 5% 0 3%;
     align-items: center;
 }
-.others-profile{
-    padding: 0 0 0 10px;
-}
 .others-profile img{
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     opacity: 0.9;
     cursor: pointer;
@@ -210,7 +212,7 @@
     opacity: 1;
 }
 .name-msg span i{
-    padding: 0 4px 0 4px;
+    padding: 0 1% 0 1%;
     color: green;
     font-size: 15px;
 }
@@ -218,20 +220,17 @@
     cursor: pointer;
     color: navy;
     font-weight: bold;
-    margin-left: 15px;
-}
-.name-msg span p{
-    color: grey;
+    margin-left: 5%;
 }
 .name-msg span b{
-    color: brown;
+    color: grey;
 }
 .msg{
     color: black;
     font-size: 16px;
     font-weight: 500;
-    padding: 5px 0 0 0;
-    margin-left: 12px;
+    padding: 1% 0 0 0;
+    margin-left: 2%;
     text-align: justify;
     text-justify: inter-word;
     word-wrap: break-word;
@@ -242,6 +241,8 @@
 .more-option{
     cursor: pointer;
     padding: 10px 0px;
+    font-size: 100%;
+    font-weight: bolder;
 }
 .image-video{
     margin: 0 0 0 12%;
@@ -266,24 +267,24 @@
     cursor: pointer;
 }
 .your-reaction div p{
-    padding: 0 0 0 5px;
-    font-size: 12px;
+    padding: 0 0 0 5%;
+    font-size: 100%;
 }
 .your-reaction div i{
-    font-size: 20px;
-    padding: 5px 5px;
+    font-size: 100%;
+    padding: 5% 5%;
 }
 .like , .comment , .share{
     color: green;
 }
 .like:hover{
-    color: red;
+    color: navy;
 }
 .comment:hover{
-    color: blue;
+    color: navy;
 }
 .share:hover{
-    color: greenyellow;
+    color: navy;
 }
 
 /*---------------profile page------------------*/
@@ -348,11 +349,11 @@
 }
 /*---------------------------------------trending menu-------------------------------------*/
 .trending-menu{
-    width: 350px;
+    width: 25%;
 }
 .trending-center{
-    width: 85%;
-    margin: 0 0 0 50px;
+    width: 95%;
+    margin: 0 0 0 18%;
 }
 .search{
     width: 100%;
@@ -374,12 +375,12 @@
     padding: 0 10px 0 50px;
     font-size: 15px;
     color: black;
-    letter-spacing: 1px;
+    letter-spacing: 2%;
 }
 .search span{
     position: absolute;
     left: 7%;
-    top:8px;
+    top:15%;
     font-size: 20px;
     font-weight: 100;
     color: rgb(122, 122, 122);
@@ -388,7 +389,7 @@
     width: 100%;
     background: rgb(235, 234, 234);
     border-radius: 20px;
-    margin: 0 0 20px 0;
+    margin: 0 0 10% 0;
     overflow-y: hidden;
     max-height: 333px;
 }
@@ -397,12 +398,12 @@
 }
 .header{
     width: 100%;
-    height: 55px;
+    height: 1%;
     color: green;
     border-bottom: 1px solid rgb(201, 199, 199);
 }
 .header p{
-    padding: 15px 20px;
+    padding: 4% 10%;
     font-size: 18px;
     font-weight: 900;
 }
@@ -415,11 +416,11 @@
     border-bottom: 1px solid gray;
 }
 .trend-msg{
-    margin: 15px 0 0 20px;
+    margin: 10% 1% 0 10%;
     color: black;
 }
 .trend-name{
-    margin: 0 0 10px 0;
+    margin: 0 0 5% 0;
     cursor: pointer;
 }
 .trend-name p, .trend-with p{
@@ -427,7 +428,7 @@
     opacity: 0.6;
 }
 .trend-with{
-    margin: 0 0 20px 0;
+    margin: 0 0 10% 0;
     cursor: pointer;
 }
 .subject p{
@@ -435,22 +436,22 @@
     font-weight: 600;
     text-justify: inter-word;
     word-wrap: break-word;
-    margin: 0 0 10px 0;
+    margin: 0 0 5% 0;
     cursor: pointer;
 }
 .trend-picture{
-    padding: 20px 0;
+    padding: 20% 0;
 }
 .trend-picture img{
-    width:90px;
-    height: 70px;
+    width:95%;
+    height: 50%;
     border-radius: 20px;
 }
 .trend:hover, .person:hover{
     background: white;
 }
 .show-more{
-    padding: 20px 20px;
+    padding: 5% 10%;
 }
 .show-more a{
     text-decoration: none;
@@ -458,17 +459,16 @@
 }
 .show-more:hover{
     background: white;
-    border-radius: 0 0 20px 20px;
 }
 .person{
     display: grid;
     grid-template-columns: 20% 50% 30%;
-    padding: 10px 0;
+    padding: 5% 0;
     align-items: center;
     border-bottom: 1px solid gray;
 }
 .person-profile{
-    padding: 0 0 0 10px;
+    padding:0 10% 0 10%;
 }
 .person-profile img{
     width: 50px;
@@ -479,19 +479,18 @@
 .person-profile img:hover{
     opacity: 1;
 }
-.followers-name p{
-    font-size: 16px;
-    font-weight: 600;
+.name{
+    margin-left: 10%;
 }
 .name h3{
     font-size: 16px;
 }
 .name p{
     opacity: 0.6;
-    padding: 5px 0 0 0;
+    padding: 5% 10% 0 0;
 }
 .send-follow-request button{
-    padding: 5px 10px;
+    padding: 5% 10%;
     outline: none;
     border: 1px solid white;
     color: white;
@@ -508,105 +507,14 @@
 
 /*------------------------make responsive-------------------------------------------*/
 
-@media(max-width:950px){
-    .options-menu{
-        width: 100px;
-    }
-    .option button{
-        margin-left: 20px;
-        padding: 10px 10px;
-    }
-    .options-center{
-        margin-left: -50%;
-    }
-    .content-menu{
-        width: 400px;
-    }
-    .container{
-        display: flex;
-    }
-    .option-center{
-        width: 80%;
-    }
-    .option div a i{
-        padding: 0;
-        border-radius: 50%;
-    }
-    .profile-msg{
-        grid-template-columns: 25% 40% 35%;
-    }
+@media(max-width:1024px){
     .trending-menu{
         display: none;
     }
+    .options-menu{
+        width: 25%;
+    }
+    .content-menu{
+        width: 75%;
+    }
 }
-
- @media(max-width:560px){
-    .option-menu{
-        width: 20%;
-    }
-    .option-center{
-        width: 70%;
-        margin-left: 20%;
-    }
-        
-    .logo{
-        padding: 4% 0 4% 40%;
-    }
-    .logo a img{
-        width: 30px;
-        height: 50px;
-        margin-left: 50px;
-    }
-    .option div a{
-        text-decoration: none;
-        font-size: 30px;
-        font-weight: 600px;
-        padding: 12px 8px;
-        border-radius: 30px;
-        color: green;
-    }
-    .option div{
-        padding:2% 0 20% 20%;
-    }
-    .option div a i{
-        padding: 0 0 0 65%;
-        font-weight: 100;
-        margin-left: 30%;    
-    }
-    .option div a:hover{
-        color: white;
-        padding: 5% 10% 5% 2%;
-        background: green;
-        border: 1px green solid;
-    }
-    .option button{
-        padding: 15px 50px;
-        border-radius: 30px;
-        outline: none;
-        background: green;
-        color: white;
-        border: none;
-        font-weight: 600;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    .option button:hover{
-        background: white;
-        color: green;
-        border: 2px solid green;
-        transition: 0.1s;
-    }
-        .trending-menu{
-            display: none;
-        }
-        .content-menu{
-            width: 80%;
-        }
-        .container{
-            display: flex;
-            width: 100%;
-        }
-        .profile-msg{
-            grid-template-columns: 20% 60% 20%;
-        }
- }
