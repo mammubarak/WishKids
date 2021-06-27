@@ -66,6 +66,7 @@
                         <li><a href="#" class="shadowfilter">Product</a></li>
                         <li><a href="#" class="shadowfilter">About</a></li>
                         <li><a href="#" class="shadowfilter">Myprofile</a></li>
+                        
                     </ul>
                 </nav>
             </header>
@@ -131,24 +132,143 @@
                                 <button type="button" onclick="login()" class="toggle-btn shadowfilter ">Register</button>
                                  <button type="button" onclick="register()" class="toggle-btn  shadowfilter">Log In</button>
                             </div>
-                            <div class="log"><form id="login" class=" input-group-register">
+                            <!--<div class="log"><form id="login" class=" input-group-register" method="POST" action="{{ route('register') }}">
 
-                                <input type="text" class="input-field" placeholder="First Name" required>
+                                 <input type="text" class="input-field" placeholder="First Name" required>
                                 <input type="text" class="input-field" placeholder="Last Name" required>
                                 <input type="email" class="input-field" placeholder="Email Id" required>
                                 <input type="password" class="input-field" placeholder="Enter Password" required>
                                 <input type="password" class="input-field" placeholder="Confirm Password" required>
                                 <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
-                                <button type="submit" class="submit-btn shadowfilter">Register</button>
+                                <button type="submit" class="submit-btn shadowfilter"><a href="{{ route('register') }}">Register</a></button>
 
-                            </form></div>
+                            </form></div>-->
 
-                            <div class="reg"><form id="register" class="input-group-login">
+                            <!-- <div class="reg"><form id="register" class="input-group-login" >
                                 <input type="text" class="input-field" placeholder="Email Id" required>
                                 <input type="password" class="input-field" placeholder="Enter Password" required>
                                 <input type="checkbox" class="check-box"><span>Remember Password</span>
-                                <button type="submit" class="submit-btn shadowfilter">Log In</button>
-                            </form></div>
+                                <button type="submit" class="submit-btn shadowfilter"><a href="{{ route('login') }}">Log In</a></button>
+                            </form></div>-->
+                            <form id="login" method="POST" action="{{ route('register') }}" class=" input-group-register">
+                        @csrf
+
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Register') }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--==========login form======-->
+                    <form  id="register" method="POST" action="{{ route('login') }}" class="input-group-login">
+                        @csrf
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                    <label class="form-check-label" for="remember">
+                                        {{ __('Remember Me') }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+                                </button>
+
+                                @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif
+                            </div>
+                        </div>
+                    </form>
                         </div>
                     </div>
                 </div>
