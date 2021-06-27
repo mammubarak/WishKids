@@ -66,6 +66,23 @@
                         <li><a href="#" class="shadowfilter">Product</a></li>
                         <li><a href="#" class="shadowfilter">About</a></li>
                         <li><a href="#" class="shadowfilter">Myprofile</a></li>
+                        <li>
+                                <a id="navbarDropdown"  href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div  aria-labelledby="navbarDropdown">
+                                    <a  href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" >
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
                     </ul>
                 </nav>
             </header>
