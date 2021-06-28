@@ -284,7 +284,7 @@ nav ul li a:hover {
 .full-page {
     width: 100vw;
     height: 100vh;
-    background-image: url(formbackground.jpg);
+    background-image: url("images/welcome/formbackground.jpg");
     object-fit: cover;
     background-size: 100% 100%;
 
@@ -873,7 +873,7 @@ nav ul li a:hover {
     .social {
         margin-bottom: -90px;
     }
-    /*=======form=============*//*
+    /*=======form=============*/ /*
     .full-page {
         width: 100vw;
         height: 100vh;
@@ -941,7 +941,7 @@ nav ul li a:hover {
         margin: 10px 5px 0px 0px;
     }
 
-    /*=========form finish========*//*
+    /*=========form finish========*/ /*
     .footer {
         padding: 20px;
         width: 100vw;
