@@ -334,3 +334,18 @@ img{
     width: 36px;
     height: 24px;
 }
+.copyrightText {
+    width: 100vw;
+    background: #094b65;
+    padding: 8px 100px;
+    text-align: center;
+
+    border-radius: 35px;
+    margin-top: 50px;
+    position: relative;
+}
+.copyrightText p {
+    font-size: 10px;
+    color: #fff;
+    opacity: 55%;
+}
