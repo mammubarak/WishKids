@@ -151,7 +151,6 @@ section #text span {
 }
 img{
     width: 100%;
-    height: 35%;
     display: block;
     border-radius: 20px 20px 0 0;
 }
@@ -188,4 +187,150 @@ img{
 }
 .link a i:hover{
     opacity: 0.6;
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #094b65;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    object-position: bottom;
+    z-index: 10000;
+    margin-top: 0;
+}
+.footer:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #052735, transparent);
+}
+.sec::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #20617a, transparent);
+}
+
+.footer .foot-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer .foot-container .footsec {
+    margin-right: 30px;
+}
+.footer .foot-container .footsec.aboutus {
+    width: 40%;
+}
+.footer .foot-container h2 {
+    position: relative;
+    color: #4090af;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.footer .foot-container h2:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #4090af;
+}
+.footer p {
+    color: white;
+    font-size: 14px;
+}
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.sci li a:hover {
+    background: transparent;
+    transform: scale(1.95);
+}
+.sci li a .bx {
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks {
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li {
+    list-style: none;
+    font-size: 14px;
+}
+.quickLinks ul li a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover {
+    color: rgba(255, 255, 255, 0.726);
+    font-style: italic;
+    transform: scale(1.15);
+}
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info {
+    position: relative;
+}
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span {
+    color: white;
+    font-size: 14px;
+}
+.contact .info li a {
+    color: white;
+    text-decoration: none;
+}
+.contact .info li a:hover {
+    text-decoration: italic;
+    transform: scale(1.15);
+}
+.srilanka {
+    width: 36px;
+    height: 24px;
 }
