@@ -363,7 +363,8 @@ nav ul li a:hover {
     padding: 10px 30px;
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin: 0% auto;
+    margin-top: 60px;
     background: rgba(47, 255, 0, 0.322);
     border: 0;
     outline: none;
@@ -373,6 +374,15 @@ nav ul li a:hover {
 }
 .check-box {
     margin: 14px 10px 29px 2px;
+    color: dimgrey;
+}
+a.btn.btn-link {
+    color: dimgrey;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
 }
 .formsec span {
     color: rgb(255, 255, 255);
@@ -641,7 +651,7 @@ nav ul li a:hover {
 @media (max-width: 360px) {
     .logoc {
         height: 80px;
-        padding-top: 28px;
+        padding-top: 0px;
     }
     .showcase,
     .showcase header {
@@ -683,6 +693,7 @@ nav ul li a:hover {
         right: -55px;
         top: 10px;
     }
+
     nav ul li a {
         height: 50px;
         padding: 0 10px;
