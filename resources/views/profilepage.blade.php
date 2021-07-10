@@ -45,18 +45,18 @@
                 </span>
             </div>
             <div class="you-tweet-other-tweet" id="tweet">
-                <div class="your-tweet">
+            <form action="" method="post" enctype="multipart/form-data"><div class="your-tweet">
                     <div class="profile-message">
                         <span><img src="profile.jpg" alt="profile"></span>
-                        <span><input type="text" placeholder="What's on your mind"></span>
+                        <span><input type="text" name="description" placeholder="What's on your mind"></span>
                     </div>
                     <div class="add-extra">
                         <div class="images-more">
-                            <span><a href="#"><i class="fa fa-picture-o"></i></a></span>
-                            <span><a href="#"><i class="fa fa-bars"></i></span>
+                            <span><a href="#"><i class="fa fa-picture-o"></i><input type="file" name="post_pic" class="uploadFile" accept="image/*"></a></span>
+                            <span><a href="#"><i class="fa fa-bars"></i><input type="file" name="post_file" class="uploadFile"></span>
                         </div>
-                        <span><button>Post</button></span>
-                    </div>
+                        <span><button type="submit">Post</button></span>
+                    </div></form>
                 </div>
                 <!------------------------other tweet----------------------------------->
                     <!------------------------each person------------------------------------->

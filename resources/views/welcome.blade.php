@@ -45,11 +45,11 @@
         <section class="showcase" id="">
             <header>
                 <div class="logo">
-                    <a href="index.html"
+                    <a href="{{route('home')}}"
                         ><img
                             src="css/images/welcome/4.png"
                             alt="logo"
-                          height="70px"  
+                            height="70px"
                             class="shadowfilter logoc"
                     /></a>
                 </div>
@@ -66,7 +66,7 @@
                         <li><a href="#" class="shadowfilter">Product</a></li>
                         <li><a href="#" class="shadowfilter">About</a></li>
                         <li><a href="#" class="shadowfilter">Myprofile</a></li>
-                        
+
                     </ul>
                 </nav>
             </header>
@@ -150,114 +150,114 @@
                                 <input type="checkbox" class="check-box"><span>Remember Password</span>
                                 <button type="submit" class="submit-btn shadowfilter"><a href="{{ route('login') }}">Log In</a></button>
                             </form></div>-->
-                            <form id="login" method="POST" action="{{ route('register') }}" class=" input-group-register">
+                          <div class="log"> <form id="login" method="POST" action="{{ route('register') }}" class=" input-group-register">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-form-label text-md-right"></label>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                              <input id="name" type="text" placeholder="{{ __('Name') }}" class="form-control @error('name') is-invalid @enderror input-field" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
+
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-form-label text-md-right"></label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                <input id="email" type="email" placeholder="{{ __('E-Mail Address') }}" class="form-control @error('email') is-invalid @enderror input-field" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
+
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class=" col-form-label text-md-right"></label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                <input id="password" type="password" placeholder="{{ __('Password') }}" class="form-control @error('password') is-invalid @enderror input-field" name="password" required autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
+
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-form-label text-md-right"></label>
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
+
+                                <input id="password-confirm" type="password" placeholder="{{ __('Confirm Password') }}" class="form-control input-field" name="password_confirmation" required autocomplete="new-password">
+
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                        <div class="form-group row ">
+                            <div class="offset-md-4">
+                                <button type="submit" class="btn btn-primary submit-btn shadowfilter">
                                     {{ __('Register') }}
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form></div>
                     <!--==========login form======-->
-                    <form  id="register" method="POST" action="{{ route('login') }}" class="input-group-login">
+                   <div class="reg"> <form  id="register" method="POST" action="{{ route('login') }}" class="input-group-login">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class=" col-form-label text-md-right"></label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                <input id="email" type="email" placeholder="{{ __('E-Mail Address') }}" class="form-control @error('email') is-invalid @enderror input-field" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
+
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-form-label text-md-right"></label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                <input id="password" type="password" placeholder="{{ __('Password') }}" class="form-control @error('password') is-invalid @enderror input-field" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
+
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
+
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
+                                    <label class="check-box" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
-                            </div>
+
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+
+                                <button type="submit" class="btn btn-primary submit-btn shadowfilter">
                                     {{ __('Login') }}
                                 </button>
 
@@ -266,9 +266,9 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
-                            </div>
+
                         </div>
-                    </form>
+                    </form></div>
                         </div>
                     </div>
                 </div>
