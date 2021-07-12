@@ -1,30 +1,31 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
-.container{
-    display: flex;
+.container {
+    margin: 0% auto;
+
     width: 100%;
 }
-.options-menu{
+.options-menu {
     width: 15%;
     border-right: 1px solid rgb(224, 220, 220);
     height: 760px;
+    float: left;
 }
-.options-center{
+.options-center {
     width: 80%;
     margin: 0;
 }
-.logo{
+.logo {
     padding: 4% 20% 4% 30%;
 }
-.logo a img{
+.logo a img {
     width: 30px;
     height: 50px;
 }
-.option div a{
+.option div a {
     text-decoration: none;
     font-size: 30px;
     font-weight: 600px;
@@ -32,28 +33,28 @@
     border-radius: 30px;
     color: green;
 }
-.option div{
-    padding:8% 0 20% 1%;
+.option div {
+    padding: 8% 0 20% 1%;
 }
-.option div a i{
+.option div a i {
     padding: 0;
     font-weight: 100;
-    margin-left: 30%;    
+    margin-left: 30%;
 }
-.option div a:hover{
+.option div a:hover {
     color: white;
     padding: 5% 10% 5% 10%;
     background: green;
     border: 1px green solid;
 }
-.option div a i:hover{
+.option div a i:hover {
     padding: 5% 10% 5% 10%;
     font-weight: 100;
-    margin-left: 10%; 
+    margin-left: 10%;
     margin-right: 10%;
 }
-.option button{
-    padding:10% 30%;
+.option button {
+    padding: 10% 30%;
     border-radius: 30px;
     outline: none;
     background: green;
@@ -63,7 +64,7 @@
     font-size: 16px;
     cursor: pointer;
 }
-.option button:hover{
+.option button:hover {
     background: white;
     color: green;
     border: 2px solid green;
@@ -71,12 +72,12 @@
 }
 
 /*--------------------Content menu----------------------------*/
-.content-menu{
+.content-menu {
     width: 60%;
     border-right: 1px solid rgb(233, 229, 229);
     background: white;
 }
-.prefer{
+.prefer {
     width: 100%;
     height: 55px;
     display: flex;
@@ -89,65 +90,65 @@
     background: white;
     z-index: 1000;
 }
-.prefer span{
+.prefer span {
     padding: 8px 20px;
 }
-.prefer span a{
+.prefer span a {
     text-decoration: none;
     color: navy;
     font-weight: 800;
     font-size: 20px;
 }
-.prefer span i{
+.prefer span i {
     font-size: 20px;
     color: green;
 }
-.you-tweet-other-tweet{
+.you-tweet-other-tweet {
     max-height: 1000px;
     overflow-y: hidden;
 }
-.you-tweet-other-tweet:hover{
+.you-tweet-other-tweet:hover {
     overflow-y: auto;
 }
 /*-------------------scroll bar----------------*/
 ::-webkit-scrollbar {
     width: 7px;
-  }
+}
 ::-webkit-scrollbar-track {
-    background: white; 
-  }
+    background: white;
+}
 ::-webkit-scrollbar-thumb {
-    background: green; 
-  }
-  
+    background: green;
+}
+
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 128, 0, 0.685); 
-  }
-  /*-------------------end scroll bar----------------*/
-.your-tweet{
+    background: rgba(0, 128, 0, 0.685);
+}
+/*-------------------end scroll bar----------------*/
+.your-tweet {
     display: block;
     width: 90%;
     border-bottom: 1px solid rgb(233, 229, 229);
     height: 10%;
     margin-left: 2%;
 }
-.profile-message{
+.profile-message {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 2% 5% 1.5% 5%;
 }
-.profile-message img{
+.profile-message img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
     opacity: 0.8;
 }
-.profile-message:hover{
+.profile-message:hover {
     opacity: 0.9;
 }
-.profile-message span input{
+.profile-message span input {
     padding: 0 0 0 5%;
     font-size: 18px;
     color: black;
@@ -155,26 +156,26 @@
     border: none;
     outline: none;
 }
-.add-extra{
+.add-extra {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.images-more{
-    margin:1% 0 1% 5%;
+.images-more {
+    margin: 1% 0 1% 5%;
 }
-.images-more span a{
+.images-more span a {
     text-decoration: none;
     color: green;
     font-size: 20px;
     padding: 5px 8px;
     border-radius: 50%;
 }
-.images-more span a:hover{
+.images-more span a:hover {
     background: green;
     color: white;
 }
-.add-extra span button{
+.add-extra span button {
     width: 60px;
     height: 40px;
     margin: 0 30px 3px 0;
@@ -186,46 +187,46 @@
     color: white;
     font-weight: 700;
 }
-.add-extra span button:hover{
+.add-extra span button:hover {
     background: white;
     border: 2px solid green;
     color: green;
 }
-.others-tweet{
+.others-tweet {
     width: 100%;
     border-bottom: 1px solid rgb(219, 216, 216);
 }
-.profile-msg{
+.profile-msg {
     display: grid;
     grid-template-columns: 12% 76% 12%;
     margin: 0 5% 0 3%;
     align-items: center;
 }
-.others-profile img{
+.others-profile img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     opacity: 0.9;
     cursor: pointer;
 }
-.others-profile img:hover{
+.others-profile img:hover {
     opacity: 1;
 }
-.name-msg span i{
+.name-msg span i {
     padding: 0 1% 0 1%;
     color: green;
     font-size: 15px;
 }
-.name-msg{
+.name-msg {
     cursor: pointer;
     color: navy;
     font-weight: bold;
     margin-left: 5%;
 }
-.name-msg span b{
+.name-msg span b {
     color: grey;
 }
-.msg{
+.msg {
     color: black;
     font-size: 16px;
     font-weight: 500;
@@ -235,25 +236,25 @@
     text-justify: inter-word;
     word-wrap: break-word;
 }
-.name-msg span b:hover{
+.name-msg span b:hover {
     text-decoration: underline;
 }
-.more-option{
+.more-option {
     cursor: pointer;
     padding: 10px 0px;
     font-size: 100%;
     font-weight: bolder;
 }
-.image-video{
+.image-video {
     margin: 0 0 0 12%;
 }
-.image-video img{
+.image-video img {
     border-radius: 20px;
     width: 90%;
     max-height: 280px;
     border: 1px solid black;
 }
-.your-reaction{
+.your-reaction {
     margin: 5% 0 5% 15%;
     display: flex;
     flex-wrap: wrap;
@@ -261,53 +262,54 @@
     width: 70%;
     opacity: 0.7;
 }
-.your-reaction div{
+.your-reaction div {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.your-reaction div p{
+.your-reaction div p {
     padding: 0 0 0 5%;
     font-size: 100%;
 }
-.your-reaction div i{
+.your-reaction div i {
     font-size: 100%;
     padding: 5% 5%;
 }
-.like , .comment , .share{
+.like,
+.comment,
+.share {
     color: green;
 }
-.like:hover{
+.like:hover {
     color: navy;
 }
-.comment:hover{
+.comment:hover {
     color: navy;
 }
-.share:hover{
+.share:hover {
     color: navy;
 }
 
 /*---------------profile page------------------*/
-.profile{
+.profile {
     width: 96.8%;
     min-height: 460px;
     background: white;
     padding: 10px 0 10px 10px;
     border-bottom: 1px solid rgb(219, 216, 216);
 }
-.user-cover-img img{
-    width:96%;
+.user-cover-img img {
+    width: 96%;
     height: 200px;
     justify-content: center;
     border: 1px solid gray;
 }
-.user-img{
+.user-img {
     display: flex;
     justify-content: space-between;
     padding: 0.5% 10%;
-
 }
-.user-img img{
+.user-img img {
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -315,8 +317,8 @@
     margin-left: 8%;
     border: 2px solid white;
 }
-.user-img button{
-    padding:1% 3%;
+.user-img button {
+    padding: 1% 3%;
     border-radius: 30px;
     outline: none;
     background: green;
@@ -326,39 +328,40 @@
     font-size: 16px;
     cursor: pointer;
 }
-.user-img button:hover{
+.user-img button:hover {
     color: green;
     background: white;
-    border:2px solid green;
+    border: 2px solid green;
 }
-.user-name h3, .user-name p{
+.user-name h3,
+.user-name p {
     color: green;
     margin-left: 30px;
 }
-.bio{
+.bio {
     color: green;
     opacity: 0.7;
     margin-left: 30px;
 }
-.bio i{
+.bio i {
     padding: 0 10px;
 }
-.bio i span{
+.bio i span {
     padding: 0 5px;
 }
-.bio span{
+.bio span {
     padding-left: 15px;
     font-size: 16px;
 }
 /*---------------------------------------trending menu-------------------------------------*/
-.trending-menu{
+.trending-menu {
     width: 25%;
 }
-.trending-center{
+.trending-center {
     width: 95%;
     margin: 0 0 0 18%;
 }
-.search{
+.search {
     width: 100%;
     height: 55px;
     position: sticky;
@@ -367,7 +370,7 @@
     align-items: center;
     z-index: 1000;
 }
-.search input{
+.search input {
     width: 100%;
     height: 40px;
     margin: 1% 0 0 0;
@@ -380,15 +383,16 @@
     color: black;
     letter-spacing: 2%;
 }
-.search span{
+.search span {
     position: absolute;
     left: 7%;
-    top:15%;
+    top: 15%;
     font-size: 20px;
     font-weight: 100;
     color: rgb(122, 122, 122);
 }
-.trending, .follow{
+.trending,
+.follow {
     width: 100%;
     background: rgb(235, 234, 234);
     border-radius: 20px;
@@ -396,45 +400,48 @@
     overflow-y: hidden;
     max-height: 333px;
 }
-.trending:hover, .follow:hover{
+.trending:hover,
+.follow:hover {
     overflow-y: auto;
 }
-.header{
+.header {
     width: 100%;
     height: 1%;
     color: green;
     border-bottom: 1px solid rgb(201, 199, 199);
 }
-.header p{
+.header p {
     padding: 4% 10%;
     font-size: 18px;
     font-weight: 900;
 }
-.trends, .persons{
+.trends,
+.persons {
     width: 100%;
 }
-.trend{
+.trend {
     display: grid;
     grid-template-columns: 60% 40%;
     border-bottom: 1px solid gray;
 }
-.trend-msg{
+.trend-msg {
     margin: 10% 1% 0 10%;
     color: black;
 }
-.trend-name{
+.trend-name {
     margin: 0 0 5% 0;
     cursor: pointer;
 }
-.trend-name p, .trend-with p{
+.trend-name p,
+.trend-with p {
     font-size: 12px;
     opacity: 0.6;
 }
-.trend-with{
+.trend-with {
     margin: 0 0 10% 0;
     cursor: pointer;
 }
-.subject p{
+.subject p {
     font-size: 15px;
     font-weight: 600;
     text-justify: inter-word;
@@ -442,57 +449,58 @@
     margin: 0 0 5% 0;
     cursor: pointer;
 }
-.trend-picture{
+.trend-picture {
     padding: 20% 0;
 }
-.trend-picture img{
-    width:95%;
+.trend-picture img {
+    width: 95%;
     height: 50%;
     border-radius: 20px;
 }
-.trend:hover, .person:hover{
+.trend:hover,
+.person:hover {
     background: white;
 }
-.show-more{
+.show-more {
     padding: 5% 10%;
 }
-.show-more a{
+.show-more a {
     text-decoration: none;
     color: green;
 }
-.show-more:hover{
+.show-more:hover {
     background: white;
 }
-.person{
+.person {
     display: grid;
     grid-template-columns: 20% 50% 30%;
     padding: 5% 0;
     align-items: center;
     border-bottom: 1px solid gray;
 }
-.person-profile{
-    padding:0 10% 0 10%;
+.person-profile {
+    padding: 0 10% 0 10%;
 }
-.person-profile img{
+.person-profile img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     opacity: 0.9;
 }
-.person-profile img:hover{
+.person-profile img:hover {
     opacity: 1;
 }
-.name{
+.name {
     margin-left: 10%;
 }
-.name h3{
+.name h3 {
     font-size: 16px;
 }
-.name p{
+.name p {
     opacity: 0.6;
     padding: 5% 10% 0 0;
 }
-.send-follow-request button{
+.send-follow-request button {
     padding: 5% 10%;
     outline: none;
     border: 1px solid white;
@@ -502,7 +510,7 @@
     font-size: 17px;
     text-transform: capitalize;
 }
-.send-follow-request button:hover{
+.send-follow-request button:hover {
     background: white;
     color: green;
     border: 2px solid green;
@@ -510,19 +518,19 @@
 
 /*------------------------make responsive-------------------------------------------*/
 
-@media(max-width:1024px){
-    .trending-menu{
+@media (max-width: 1024px) {
+    .trending-menu {
         display: none;
     }
-    .options-menu{
+    .options-menu {
         width: 25%;
     }
-    .content-menu{
+    .content-menu {
         width: 75%;
     }
 }
-@media(max-width:441px){
-    .options-menu{
+@media (max-width: 441px) {
+    .options-menu {
         width: 100%;
         position: fixed;
         border-top: 1px solid rgb(224, 220, 220);
@@ -531,27 +539,27 @@
         bottom: 0;
         z-index: 1000;
     }
-    .options-center{
+    .options-center {
         width: 100%;
         margin: 0 5% 0 4%;
         align-items: center;
         display: flex;
         overflow-x: auto;
     }
-    .logo{
+    .logo {
         padding: 1% 3% 0 1%;
     }
-    .logo a img{
+    .logo a img {
         width: 25px;
         height: 40px;
     }
-    .option{
+    .option {
         display: flex;
     }
-    .option div{
-        padding:4% 10% 0 5%;
+    .option div {
+        padding: 4% 10% 0 5%;
     }
-    .option div a{
+    .option div a {
         text-decoration: none;
         font-size: 25px;
         font-weight: 600px;
@@ -560,25 +568,25 @@
         color: green;
         display: flex;
     }
-    .option div a i{
+    .option div a i {
         padding: 0;
         font-weight: 100;
-        margin:0 3% 0 4%;    
+        margin: 0 3% 0 4%;
     }
-    .option div a:hover{
+    .option div a:hover {
         color: white;
         padding: 5% 10% 5% 10%;
         background: green;
         border: 1px green solid;
     }
-    .option div a i:hover{
+    .option div a i:hover {
         padding: 5% 10% 5% 10%;
         font-weight: 100;
-        margin-left: 10%; 
+        margin-left: 10%;
         margin-right: 10%;
     }
-    .option button{
-        padding:10% 30%;
+    .option button {
+        padding: 10% 30%;
         border-radius: 30px;
         outline: none;
         background: green;
@@ -588,20 +596,20 @@
         font-size: 16px;
         cursor: pointer;
     }
-    .option button:hover{
+    .option button:hover {
         background: white;
         color: green;
         border: 2px solid green;
         transition: 0.1s;
     }
-    .content-menu{
+    .content-menu {
         width: 100%;
     }
-    .you-tweet-other-tweet{
+    .you-tweet-other-tweet {
         min-height: 180px;
         overflow-y: hidden;
     }
-    .you-tweet-other-tweet:hover{
+    .you-tweet-other-tweet:hover {
         overflow-y: auto;
     }
 }
