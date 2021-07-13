@@ -1,8 +1,10 @@
-body {
+
+
+body{
     padding: 0;
     margin-left: -100%;
     width: 100vw;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .container {
     margin: 0% auto;
@@ -12,7 +14,7 @@ body {
 .options-menu {
     width: 15%;
     border-right: 1px solid rgb(224, 220, 220);
-    margin-left: -4%;
+    margin-left: -4%;  
 }
 .logo {
     padding: 4% 20% 4% 38%;
@@ -31,13 +33,13 @@ body {
     padding: 4% 8% 4% 8%;
     border-radius: 30px;
     color: rgba(0, 128, 0, 0.65);
-    margin-left: 30%;
+    margin-left: 30%; 
     width: 100px;
 }
-.option div a:hover {
+.option div a:hover{
     color: rgb(0, 128, 0);
 }
-.option div a i:hover {
+.option div a i:hover{
     color: rgb(0, 128, 0);
     transform: scale(1.25);
 }
@@ -60,7 +62,7 @@ body {
 }*/
 
 /*--------------------Content menu----------------------------*/
-.content-menu {
+.content-menu{
     width: 65%;
     border-right: 1px solid rgb(233, 229, 229);
     background: white;
@@ -133,7 +135,7 @@ body {
     cursor: pointer;
 }
 
-.profile-message span textarea {
+.profile-message span textarea{
     width: 100%;
     height: 45px;
     margin: 1% 0 0 5%;
@@ -146,10 +148,10 @@ body {
     color: black;
     letter-spacing: 2%;
 }
-.images-more {
+.images-more{
     display: flex;
     justify-content: left;
-    margin-left: 20px;
+   margin-left: 20px;
 }
 .images-more span a {
     text-decoration: none;
@@ -158,10 +160,10 @@ body {
     padding: 5px 8px;
     border-radius: 50%;
 }
-.images-more span a:hover {
+.images-more span a:hover{
     color: green;
 }
-.profile-message span button {
+.profile-message span button{
     width: 60px;
     height: 40px;
     margin: 0 30px 3px 0;
@@ -173,11 +175,11 @@ body {
     font-weight: 700;
     background: transparent;
 }
-.profile-message span button:hover {
+.profile-message span button:hover{
     color: green;
 }
 
-.others-tweet {
+.others-tweet{
     width: 100%;
     border-bottom: 1px solid rgb(219, 216, 216);
 }
@@ -188,13 +190,13 @@ body {
     align-items: center;
 }
 
-.others-profile img {
+.others-profile img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
     cursor: pointer;
 }
-.name-msg span i {
+.name-msg span i{
     padding: 0 1% 0 1%;
     color: green;
     font-size: 15px;
@@ -273,7 +275,7 @@ body {
 }
 
 /*---------------profile page------------------*/
-.profile {
+.profile{
     width: 99.8%;
     min-height: 460px;
     background: white;
@@ -310,10 +312,10 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
-.user-img button:hover {
+.user-img button:hover{
     color: rgb(15, 83, 32);
     background: white;
-    border: 2px solid rgba(0, 128, 0, 0.65);
+    border:2px solid rgba(0, 128, 0, 0.65);
 }
 .user-name h3,
 .user-name p {
@@ -336,7 +338,7 @@ body {
     font-size: 16px;
 }
 /*---------------------------------------trending menu-------------------------------------*/
-.trending-menu {
+.trending-menu{
     width: 30%;
 }
 .trending-center {
@@ -459,11 +461,11 @@ body {
 .show-more:hover {
     background: white;
 }
-.show-more a:hover {
+.show-more a:hover{
     background: white;
     color: green;
 }
-.person {
+.person{
     display: grid;
     grid-template-columns: 20% 50% 30%;
     padding: 5% 0;
@@ -512,23 +514,23 @@ body {
 
 /*------------------------make responsive-------------------------------------------*/
 
-@media only screen and (max-width: 700px) {
-    .options-menu {
+@media only screen and (max-width:700px){
+    .options-menu{
         width: 100%;
         position: fixed;
         border-top: 1px solid rgb(224, 220, 220);
         height: 55px;
         background-color: white;
         bottom: 0;
-        z-index: 1000;
+        z-index: 1000;  
         display: flex;
         overflow-x: auto;
     }
-    .options-center {
+    .options-center{
         display: flex;
         justify-content: center;
     }
-    .logo {
+    .logo{
         margin-left: 30%;
         margin-right: 10%;
     }
@@ -540,19 +542,19 @@ body {
         display: flex;
         margin-top: -5px;
     }
-    .option div {
+    .option div{
         margin-right: 30%;
     }
     .content-menu {
         width: 100%;
     }
-    .trending-menu {
+    .trending-menu{
         display: none;
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .trending-menu {
+@media only screen and (max-width:1024px){
+    .trending-menu{
         display: none;
     }
 }
