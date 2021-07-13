@@ -258,7 +258,7 @@ nav ul li a:hover {
     display: inline-block;
     margin-right: 20px;
     transform: scale(0.5);
-    transition: o.01s;
+    transition: 0.01s;
 }
 
 .social li a:hover {
@@ -873,7 +873,7 @@ nav ul li a:hover {
     .social {
         margin-bottom: -90px;
     }
-    /*=======form=============*//*
+    /*=======form=============*/ /*
     .full-page {
         width: 100vw;
         height: 100vh;
@@ -941,7 +941,7 @@ nav ul li a:hover {
         margin: 10px 5px 0px 0px;
     }
 
-    /*=========form finish========*//*
+    /*=========form finish========*/ /*
     .footer {
         padding: 20px;
         width: 100vw;
