@@ -156,8 +156,8 @@ body{
 
 /*==========scrollbar finish========*/
 .your-tweet{
-    display: block;
     width: 90%;
+    display: block;
     border-bottom: 1px solid rgb(233, 229, 229);
     height: 10%;
     margin-left: 2%;
@@ -549,7 +549,7 @@ body{
 
 @media only screen and (max-width:700px){
     .options-menu{
-        width: 100%;
+        width: 101%;
         position: fixed;
         border-top: 1px solid rgb(224, 220, 220);
         height: 55px;
@@ -557,14 +557,14 @@ body{
         bottom: 0;
         z-index: 1000;  
         display: flex;
-        overflow-x: auto;
+        overflow-x: hidden;
     }
     .options-center{
         display: flex;
         justify-content: center;
     }
     .logo{
-        margin-left: 30%;
+        margin-left: 50%;
         margin-right: 10%;
     }
     .logo a img{
@@ -574,12 +574,19 @@ body{
     .option{
         display: flex;
         margin-top: -5px;
+        margin-left: 50%;
+        justify-content: center;
     }
     .option div{
         margin-right: 30%;
     }
     .content-menu{
         width: 100%;
+        overflow-x: hidden;
+    }
+    .your-tweet{
+        width: 100%;
+        overflow-x: hidden;
     }
     .trending-menu{
         display: none;
@@ -589,6 +596,9 @@ body{
 @media only screen and (max-width:1024px){
     .trending-menu{
         display: none;
+    }
+    .content-menu{
+        width: 90%;
     }
 }
 
