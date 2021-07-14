@@ -24,3 +24,18 @@ for Sachethana's work:
                         1. Contact Mubarak from about page
                         2. more details from Sachethana on about page
                         3. Join us!
+
+    profile - .name-msg, .msg, p :
+                        1. Environment Day!
+                        2. We planed a nature camping.
+                        3. Join us to have fun with nature.
+
+                .trend, .subject :
+                        1. poster competition for nature lovers
+                        2. U can participate for our tree planting campaign
+                        3. We created a group to share ur knowledge
+
+                .trend, .trend-with:
+                        1. Contact Mubarak from about page
+                        2. more details from Sachethana on about page
+                        3. Join us!
