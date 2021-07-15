@@ -7,6 +7,7 @@
   
     <!--  boxicon CSS -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="venobox.css" type="text/css" media="screen" />
     <title>  wishkids videdo gallery  </title>
    
 
@@ -59,86 +60,87 @@
         <div class="video-container container-fluid">
             <div class="row V_card_row">
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
-                        <div class="video">
-                            <video src="ex1.mp4"muted></video>
-                            <h4>Video Name here</h4>
-                        </div>
-                    </a>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
-                        <div class="video">
-                            <video src="1.mp4"muted></video>
+                    
+                        
+                            <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://youtu.be/0LOVynaHqto"></a>
                             <h4>Video Name here</h4>
                         </div>
-                    </a>
+                    
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
-                        <div class="video">
-                            <video src="0.mp4"muted></video>
+                    
+                        <div class="video" style="background-image:url(saveworld.jpg);">
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/0LOVynaHqto"></a>
                             <h4>Video Name here</h4>
                         </div>
-                    </a>
+                    
                 </div>
             </div>
             <div class="row V_card_row">
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
+                    
                         <div class="video">
                             <video src="ex1.mp4"muted></video>
                             <h4>Video Name here</h4>
                         </div>
-                    </a>
+                    
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
+                    
                         <div class="video">
                             <video src="ex1.mp4"muted></video>
                             <h4>Video Name here</h4>
                         </div>
-                    </a>
+                    
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
+                    
                         <div class="video">
                             <video src="ex1.mp4"muted></video>
                             <h4>Video Name here</h4>
                         </div>
-                    </a>
+                    
                 </div>
             </div>
             <div class="row V_card_row">
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
+                
                         <div class="video">
                             <video src="ex1.mp4"muted></video>
                             <h4>Video Name here</h4>
                         </div>
-                    </a>
+                    
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
+                    
                         <div class="video">
                             <video src="ex1.mp4"muted></video>
                             <h4>Video Name here</h4>
                         </div>
-                    </a>
+                    
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <a href="web2.html">
+                
                         <div class="video">
                             <video src="1.mp4"muted></video>
                             <h4>Video Name here</h4>
                         </div>
-                    </a>
+                    
                 </div>
             </div>
     </div>
     
     </div>
-    
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="venobox.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    $('.venobox').venobox(); 
+});
+</script>
 </body>     
    </html>
 
