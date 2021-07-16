@@ -348,3 +348,28 @@ img{
     color: #fff;
     opacity: 55%;
 }
+
+
+
+
+
+
+@media (max-width: 360px) {
+    .footer {
+        padding: 20px;
+        width: 100vw;
+    }
+    .footer .foot-container {
+        flex-direction: column;
+    }
+    .footer .foot-container .sec {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .footer .foot-container .sec.aboutus,
+    .quickLinks,
+    .contact {
+        width: 100%;
+        text-align: justify;
+    }
+}
