@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Abel", sans-serif;
+}
+body {
+    background-size: cover;
+    background-image: url(bg3.gif);
+}
+.logo {
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.text h2 {
+    font-size: 4em;
+    font-weight: 600;
+    opacity: 75%;
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.05px;
+    text-align: center;
+    padding-top: 0%;
+}
+#blur1,
+#blur2,
+#blur3,
+#blur4,
+#blur5,
+#blur6,
+#blur7,
+#blur8,
+#blur9 {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+#text1,
+#text2,
+#text3,
+#text4,
+#text5,
+#text6,
+#text7,
+#text8,
+#text9 {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+@keyframes animate {
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #fff;
+        text-shadow: none;
+    }
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    90.1%,
+    92% {
+        color: #fff;
+        text-shadow: 0 0 10px #112933, 0 0 20px #112933, 0 0 40px #112933,
+            0 0 80px #112933, 0 0 160px #112933;
+    }
+}
+
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+}
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.25rem;
+}
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}

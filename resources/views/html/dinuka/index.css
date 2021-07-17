@@ -119,7 +119,7 @@ section #text span {
 .sec {
     position: relative;
     padding: 10%;
-    min-height: 1000px;
+    height: auto;
     background: #094b65;
     display: grid;
     place-items: center center;
@@ -213,6 +213,7 @@ img{
     height: 200px;
     background: linear-gradient(to top, #052735, transparent);
 }
+/*
 .sec::after {
     content: "";
     position: absolute;
@@ -222,7 +223,7 @@ img{
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, #20617a, transparent);
-}
+}*/
 
 .footer .foot-container {
     display: flex;
@@ -253,7 +254,6 @@ img{
 }
 .footer p {
     color: white;
-    font-size: 14px;
 }
 .sci {
     margin-top: 20px;
@@ -320,7 +320,6 @@ img{
 }
 .contact .info li span {
     color: white;
-    font-size: 14px;
 }
 .contact .info li a {
     color: white;
@@ -333,4 +332,44 @@ img{
 .srilanka {
     width: 36px;
     height: 24px;
+}
+.copyrightText {
+    width: 100vw;
+    background: #094b65;
+    padding: 8px 100px;
+    text-align: center;
+
+    border-radius: 35px;
+    margin-top: 50px;
+    position: relative;
+}
+.copyrightText p {
+    font-size: 10px;
+    color: #fff;
+    opacity: 55%;
+}
+
+
+
+
+
+
+@media (max-width: 360px) {
+    .footer {
+        padding: 20px;
+        width: 100vw;
+    }
+    .footer .foot-container {
+        flex-direction: column;
+    }
+    .footer .foot-container .sec {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .footer .foot-container .sec.aboutus,
+    .quickLinks,
+    .contact {
+        width: 100%;
+        text-align: justify;
+    }
 }
