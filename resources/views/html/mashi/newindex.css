@@ -15,6 +15,7 @@ body {
     margin-left: 30px;
     margin-top: 30px;
     padding: 20px;
+  
 }
 
 .text h2 {
@@ -41,6 +42,7 @@ body {
 #blur9 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+
 
 
 #blur1:hover {
@@ -197,4 +199,192 @@ footer p {
         rgb(255, 255, 255),
         rgba(255, 0, 0, 0)
     );
+}
+/*==========Footer start============*/
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #1b1b1b86;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    object-position: bottom;
+    z-index: 10000;
+
+}
+.footer:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #000000, transparent);
+}
+.formsec::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #000000, transparent);
+}
+
+.footer .foot-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer .foot-container .sec {
+    margin-right: 30px;
+}
+.footer .foot-container .sec.aboutus {
+    width: 40%;
+}
+.footer .foot-container h2 {
+    position: relative;
+    color: rgba(216, 216, 216, 0.781);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.footer .foot-container h2:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #e7e7e7;
+}
+.footer p {
+    color: rgb(136, 136, 136);
+}
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+   
+}
+.sci li a:hover {
+    background: transparent;
+    transform: scale(1.95);
+}
+.sci li a .bx {
+    color: rgba(216, 216, 216, 0.781);
+    font-size: 20px;
+}
+.quickLinks {
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li {
+    list-style: none;
+}
+.quickLinks ul li a {
+    color: rgb(136, 136, 136);
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover {
+    color: rgba(4, 5, 4, 0.8);
+    font-style: italic;
+    transform: scale(1.15);
+}
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info {
+    position: relative;
+}
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: rgb(136, 136, 136);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span {
+    color: rgb(136, 136, 136);
+}
+.contact .info li a {
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+}
+.contact .info li a:hover {
+    text-decoration: italic;
+    transform: scale(1.15);
+}
+.srilanka {
+    width: 36px;
+    height: 24px;
+}
+.copyrightText {
+    width: 100vw;
+    background: rgba(136, 136, 136,0.15);
+    text-align: center;
+    border-radius: 35px;
+    position: relative;
+}
+.copyrightText p {
+    font-size: 10px;
+    color: #fff;
+    opacity: 55%;
+    padding-top: 15px;
+}
+
+/*==========Footer finish============*/
+@media (max-width:360px){
+    .footer {
+        padding: 20px;
+        width: 100vw;
+    }
+    .footer .foot-container {
+        flex-direction: column;
+    }
+    .footer .foot-container .sec {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .footer .foot-container .sec.aboutus,
+    .quickLinks,
+    .contact {
+        width: 100%;
+        text-align: justify;
+    }
+    .text h2
+    {
+        font-size: 2.3rem;
+        line-height: 0.7em;
+    }
+    .logo {
+        cursor: pointer;
+        margin-left: 15px;
+        margin-top: 15px;
+        padding: 10px;
+    }
 }
