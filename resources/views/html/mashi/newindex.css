@@ -41,6 +41,45 @@ body {
 #blur9 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+
+
+#blur1:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+#blur2:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+#blur3:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+#blur4:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+#blur5:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+#blur6:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+#blur7:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+#blur8:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+#blur9:hover {
+    box-shadow: 0 5px 15px rgb(1, 255, 14);
+    transform: scale(1.01);
+}
+
 #text1,
 #text2,
 #text3,
@@ -122,4 +161,40 @@ footer p {
 
 .box-shadow {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+/*========scroll bar===*/
+
+/* width */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(45, 51, 46, 0.918);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(255, 0, 0, 0);
+
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0),
+        rgba(255, 0, 0, 0),
+        rgba(255, 0, 0, 0)
+    );
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0),
+        rgb(255, 255, 255),
+        rgba(255, 0, 0, 0)
+    );
 }
