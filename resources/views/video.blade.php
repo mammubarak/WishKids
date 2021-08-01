@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wishkids videdo gallery</title>
 
-   
+
     <link rel="stylesheet" href="{{asset('css/video.css')}}">
     <link rel="icon" href="css/images/video/4.png" type="image/icon type" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -26,7 +26,7 @@
     <div class="text">
         <h2>WishKids Video Gallery</h2>
     </div>
- 
+
     <div class="album py-5 bg-transparent">
         <div class="container">
 
@@ -64,7 +64,7 @@
                   </div>
                 </div>
               </div>
-           
+
 
               <div class="col-md-4 bg-transparent rad">
                 <div class="card mb-4 box-shadow bg-transparent" id="blur4">
@@ -139,7 +139,7 @@
 
       <!-- footer -->
       <div class="footer" id="footer">
-       
+
         <div class="foot-container">
             <div class="sec aboutus">
                 <h2>
@@ -151,7 +151,7 @@
                     <li><a href="#" class="shadowfilter"><i class='bx bxl-twitter'></i></a></li>
                     <li><a href="#" class="shadowfilter"><i class='bx bxl-instagram'></i></a></li>
                     <li><a href="#" class="shadowfilter"><i class='bx bxl-youtube'></i></a></li>
-    
+
                 </ul>
             </div>
             <div class="sec quickLinks">
@@ -175,25 +175,25 @@
                     <li>
                         <span><i class='bx bx-map' ></i></span>
                         <span>NSBM Green University <br>Pitipana - Thalagala Rd, Homagama<br>Sri Lanka <br><img class="srilanka" src="css/images/video/srilanka.gif"/></span>
-                        
+
                     </li>
                     <li>
                         <span><i class='bx bx-phone'></i></span>
                         <p><a href="tel:+123456789" class="shadowfilter">+94 123 456 789</a><br><a href="tel:+123456789" class="shadowfilter">+94 123 456 789</a></p>
-                        
+
                     </li>
                     <li>
                         <span><i class='bx bx-envelope'></i></span>
                         <p><a href="mailto:wishkids.org@gmai.com " class="shadowfilter">wishkids.org@gmail.com</a></p>
-                        
-                        
+
+
                     </li>
                 </ul>
 
 
 
             </div>
-       
+
            <!-- <div id="top"><a href="#showcase">Home</a></div>-->
         </div>
 
@@ -202,14 +202,14 @@
         <p>Copyright© 2021 by EcoWish®.<br> All Rights Reserved.</p>
     </div>
 <!-- footer finish -->
-    
+
 
     <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="venobox.min.js"></script>
     <script>
-    
+
     $(document).ready(function(){
-        $('.venobox').venobox(); 
+        $('.venobox').venobox();
     });
     </script>
 </body>
