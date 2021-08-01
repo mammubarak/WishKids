@@ -63,8 +63,8 @@
                     <ul>
                         <li><a href="#" class="shadowfilter">Home</a></li>
                         <li><a href="#" class="shadowfilter">Video</a></li>
-                        <li><a href="#" class="shadowfilter">Product</a></li>
                         <li><a href="#" class="shadowfilter">About</a></li>
+                        <li><a href="#" class="shadowfilter">logout</a></li>
                         <!-- <li><a href="{{route('profilepage')}}" class="shadowfilter">Myprofile</a></li> -->
                         <li>
                                 <a id="navbarDropdown"  href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

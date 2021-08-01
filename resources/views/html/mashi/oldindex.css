@@ -1,0 +1,89 @@
+
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+
+html{
+    font-size: 62.5%;
+}
+.container .heading{
+  font-size: 4em;
+  font-weight: 100;
+  color: #e6d8d8e7;
+  opacity: 75%;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  line-height: 0.7em;
+  outline: none;
+}
+
+.video-container .video{
+    height: 15rem;
+    width: 25rem;
+    margin: 2rem;
+    box-shadow: 0  .5rem 1rem ,rgba(0, 0, 0, .5);
+    overflow: -moz-hidden-unscrollable ;
+    border-radius: 1rem;
+
+}
+
+
+
+.video-container .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.video h4{
+  text-decoration: none;
+  margin-top: 5px;
+  margin-left: 5px;  
+  color:white;
+
+}
+
+.video-container .video video:hover{
+    transition: 2s liner;
+    transform: scale(1.2);
+}
+.video video:hover~h4{
+  font-size: 30px;
+  margin-top: 20px;
+  text-decoration: none !important;
+}
+#home {
+    width: 80px;
+    height: 100px;
+    background: url(4.png) 0 0;
+  }
+  body {
+    background-color:#141414 !important;
+    font-family: cursive;
+  }
+   
+/* glow effect */
+
+  .glow {
+    font-size: 80px;
+    color: rgb(129, 238, 125);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(214, 236, 214), 0 0 20px rgb(211, 224, 214), 0 0 30px #101110, 0 0 40px #101111, 0 0 50px #171817, 0 0 60px #222021, 0 0 70px #1b1b19;
+    }
+    
+    to {
+      text-shadow: 0 0 20px rgb(196, 216, 192), 0 0 30px #101110, 0 0 40px rgb(177, 177, 163), 0 0 50px #101110, 0 0 60px white, 0 0 70px white, 0 0 80px #e7c9d8;
+    }
+  }
+
+.main_v_container{
+  background-color: #161414 !important;
+  height:max-content;
+}
+.V_card_row{
+  margin-bottom: 30px;
+}
