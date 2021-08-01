@@ -21,7 +21,7 @@
         />
 
 
-        <link rel="stylesheet" href="{{asset('css/welcome.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/welcome.css')}}"/>
 
 
 
@@ -64,24 +64,22 @@
                         <li><a href="#" class="shadowfilter">Home</a></li>
                         <li><a href="#" class="shadowfilter">Video</a></li>
                         <li><a href="#" class="shadowfilter">About</a></li>
-                        <li><a href="#" class="shadowfilter">logout</a></li>
-                        <!-- <li><a href="{{route('profilepage')}}" class="shadowfilter">Myprofile</a></li> -->
-                        <li>
-                                <a id="navbarDropdown"  href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div  aria-labelledby="navbarDropdown">
+                        <li><div >
                                     <a  href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                     document.getElementById('logout-form').submit();"  class="shadowfilter">
                                         {{ __('Logout') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" >
                                         @csrf
                                     </form>
-                                </div>
+                                </div></li>
+                        <!-- <li><a href="{{route('profilepage')}}" class="shadowfilter">Myprofile</a></li> -->
+                        <li>
+                                <a id="navbarDropdown"  href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
                             </li>
                     </ul>
                 </nav>
@@ -117,7 +115,7 @@
                         href="https://www.facebook.com/WishKids-106150198355636"
                         target="_blank"
                         ><img
-                            src="facebook .png"
+                            src="css/images/welcome/facebook .png"
                             class="shadowfilter"
                             alt="facebook"
                     /></a>
@@ -127,7 +125,7 @@
                         href="https://www.instagram.com/mr.mubarak_one/"
                         target="_blank"
                         ><img
-                            src="instagram.png"
+                            src="css/images/welcome/instagram.png"
                             class="shadowfilter"
                             alt="instagram"
                     /></a>
@@ -231,7 +229,7 @@
                 <ul class="info">
                     <li>
                         <span><i class='bx bx-map' ></i></span>
-                        <span>NSBM Green University <br>Pitipana - Thalagala Rd, Homagama<br>Sri Lanka <br><img class="srilanka" src="srilanka.gif"/></span>
+                        <span>NSBM Green University <br>Pitipana - Thalagala Rd, Homagama<br>Sri Lanka <br><img class="srilanka" src="css/images/welcome/srilanka.gif"/></span>
 
                     </li>
                     <li>

@@ -20,6 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/myprofile', function () {
-// return view('profilepage');
-// })->name('profilepage');
+
+Route::get('/myprofile', function () {
+    return view('profilepage');
+})->name('profilepage');
+
+Route::get('/video', function () {
+    return view('video');
+});

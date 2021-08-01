@@ -8,14 +8,13 @@
 }
 body {
     background-size: cover;
-    background-image: url(bg3.gif);
+    background-image: url(images/video/bg3.gif);
 }
 .logo {
     cursor: pointer;
     margin-left: 30px;
     margin-top: 30px;
     padding: 20px;
-  
 }
 
 .text h2 {
@@ -42,8 +41,6 @@ body {
 #blur9 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
-
 
 #blur1:hover {
     box-shadow: 0 5px 15px rgb(1, 255, 14);
@@ -213,7 +210,6 @@ footer p {
     flex-direction: initial;
     object-position: bottom;
     z-index: 10000;
-
 }
 .footer:before {
     content: "";
@@ -283,7 +279,6 @@ footer p {
     margin-right: 10px;
     border-radius: 10px;
     text-decoration: none;
-   
 }
 .sci li a:hover {
     background: transparent;
@@ -345,7 +340,7 @@ footer p {
 }
 .copyrightText {
     width: 100vw;
-    background: rgba(136, 136, 136,0.15);
+    background: rgba(136, 136, 136, 0.15);
     text-align: center;
     border-radius: 35px;
     position: relative;
@@ -358,7 +353,7 @@ footer p {
 }
 
 /*==========Footer finish============*/
-@media (max-width:360px){
+@media (max-width: 360px) {
     .footer {
         padding: 20px;
         width: 100vw;
@@ -376,8 +371,7 @@ footer p {
         width: 100%;
         text-align: justify;
     }
-    .text h2
-    {
+    .text h2 {
         font-size: 2.3rem;
         line-height: 0.7em;
     }
