@@ -7,10 +7,10 @@
     <title>wishkids videdo gallery</title>
 
 
-    <link rel="stylesheet" href="{{asset('css/video.css')}}">
+    <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <link rel="icon" href="css/images/video/4.png" type="image/icon type" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="{{asset('css/venobox.css')}}">
+    <link rel="stylesheet" href="css/venobox.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
@@ -33,7 +33,7 @@
           <div class="row">
             <div class="col-md-4 bg-transparent rad">
               <div class="card mb-4 box-shadow bg-transparent rounded-3"  id="blur1">
-                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=X2YgM1Zw4_E&ab_channel=SmileandLearn-English"><img class="card-img-top" src="video9.jpg" alt="Card image cap"></a>
+                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=X2YgM1Zw4_E&ab_channel=SmileandLearn-English"><img class="card-img-top" src="css/images/video/video9.jpg" alt="Card image cap"></a>
                 <div class="card-body bg-transparent rounded-3" id="text1">
                   <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil natus nisi magnam, ipsam culpa provident.</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -44,7 +44,7 @@
             </div>
             <div class="col-md-4 bg-transparent rad">
               <div class="card mb-4 box-shadow bg-transparent"  id="blur2">
-                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=Fkwicyiv1co&t=97s&ab_channel=RoyaltyFreeStockFootage"><img class="card-img-top" src="video2.jpg" alt="Card image cap"></a>
+                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=Fkwicyiv1co&t=97s&ab_channel=RoyaltyFreeStockFootage"><img class="card-img-top" src="css/images/video/video2.jpg" alt="Card image cap"></a>
                 <div class="card-body bg-transparent" id="text2">
                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quis provident molestiae blanditiis esse molestias?</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -55,7 +55,7 @@
             </div>
             <div class="col-md-4 bg-transparent rad">
                 <div class="card mb-4 box-shadow bg-transparent" id="blur3">
-                  <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=TAb9v808u1U&t=59s&ab_channel=yodiinsigne"><img class="card-img-top" src="video3.jpg" alt="Card image cap"></a>
+                  <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=TAb9v808u1U&t=59s&ab_channel=yodiinsigne"><img class="card-img-top" src="css/images/video/video3.jpg" alt="Card image cap"></a>
                   <div class="card-body bg-transparent" id="text3">
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, reiciendis aspernatur. Non qui blanditiis provident!</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -68,7 +68,7 @@
 
               <div class="col-md-4 bg-transparent rad">
                 <div class="card mb-4 box-shadow bg-transparent" id="blur4">
-                  <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=muczNvx9fgg&t=2s&ab_channel=ChristianSommer"><img class="card-img-top" src="video4.jpg" alt="Card image cap"></a>
+                  <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=muczNvx9fgg&t=2s&ab_channel=ChristianSommer"><img class="card-img-top" src="css/images/video/video4.jpg" alt="Card image cap"></a>
                   <div class="card-body bg-transparent" id="text4">
                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis, dolores dignissimos laboriosam magnam eligendi.</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -79,7 +79,7 @@
               </div>
             <div class="col-md-4 bg-transparent rad">
               <div class="card mb-4 box-shadow bg-transparent" id="blur5">
-                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=f-Sdk3Jjp3I&t=22s&ab_channel=DigitalTravelVideos">  <img class="card-img-top" src="video5.jpg" alt="Card image cap"></a>
+                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=f-Sdk3Jjp3I&t=22s&ab_channel=DigitalTravelVideos">  <img class="card-img-top" src="css/images/video/video5.jpg" alt="Card image cap"></a>
                 <div class="card-body bg-transparent" id="text5">
                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolore amet sunt ab necessitatibus nesciunt.</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -90,7 +90,7 @@
             </div>
             <div class="col-md-4 bg-transparent rad">
               <div class="card mb-4 box-shadow bg-transparent" id="blur6">
-                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=B0caLJNKZEU&t=1s&ab_channel=NextLevelHQ">  <img class="card-img-top" src="video6.jpg" alt="Card image cap"></a>
+                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=B0caLJNKZEU&t=1s&ab_channel=NextLevelHQ">  <img class="card-img-top" src="css/images/video/video6.jpg" alt="Card image cap"></a>
                 <div class="card-body bg-transparent" id="text6">
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam atque fuga cum magnam quos!</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -102,7 +102,7 @@
 
             <div class="col-md-4 bg-transparent rad">
               <div class="card mb-4 box-shadow bg-transparent" id="blur7">
-                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=Ql23uQza7Qo&t=7s&ab_channel=tbhstudying">  <img class="card-img-top" src="video7.jpg" alt="Card image cap"></a>
+                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=Ql23uQza7Qo&t=7s&ab_channel=tbhstudying">  <img class="card-img-top" src="css/images/video/video7.jpg" alt="Card image cap"></a>
                 <div class="card-body bg-transparent" id="text7">
                   <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus repudiandae, consequuntur maiores alias repellat ab!</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -113,7 +113,7 @@
             </div>
             <div class="col-md-4 bg-transparent rad">
                 <div class="card mb-4 box-shadow bg-transparent" id="blur8">
-                  <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=lq4ivmk9llM&ab_channel=CHANNELPMI-FREESTOCKVIDEO"><img class="card-img-top" src="video8.jpg" alt="Card image cap"></a>
+                  <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=lq4ivmk9llM&ab_channel=CHANNELPMI-FREESTOCKVIDEO"><img class="card-img-top" src="css/images/video/video8.jpg" alt="Card image cap"></a>
                   <div class="card-body bg-transparent" id="text8">
                     <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus odit ut nulla assumenda ullam perspiciatis?</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -124,7 +124,7 @@
               </div>
             <div class="col-md-4 bg-transparent rad">
               <div class="card mb-4 box-shadow bg-transparent" id="blur9">
-                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=pswdTJ59fdQ&t=4s&ab_channel=GKorb">  <img class="card-img-top" src="video1.jpg" alt="Card image cap"></a>
+                <a class="venobox" data-gall="myGallery" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=pswdTJ59fdQ&t=4s&ab_channel=GKorb">  <img class="card-img-top" src="css/images/video/video1.jpg" alt="Card image cap"></a>
                 <div class="card-body bg-transparent" id="text9">
                   <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ex vero sed debitis incidunt sapiente.</p>
                   <div class="d-flex justify-content-between align-items-center">
