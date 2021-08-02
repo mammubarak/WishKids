@@ -47,7 +47,7 @@
                 <div class="your-tweet">
                     <div class="profile-message">
                         <span><img src="css/images/profilepage/profile.jpg" alt="profile"></span>
-                        <span><textarea type="text" placeholder="What's on your mind"></textarea></span>
+                        <span><textarea type="text" placeholder="What's on your mind" name="description"></textarea></span>
                     
                         <div class="images-more">
                             <span><a href="#"><i class="fa fa-picture-o shadowfilter"></i></a></span>
