@@ -43,7 +43,9 @@
                     <i class="fa fa-star-o"></i>
                 </span>
             </div>
-           <form action=""> <div class="you-tweet-other-tweet" id="tweet">
+            <!-- form for crud -->
+           <form action=""> 
+               <div class="you-tweet-other-tweet" id="tweet">
                 <div class="your-tweet">
                     <div class="profile-message">
                         <span><img src="css/images/profilepage/profile.jpg" alt="profile"></span>
@@ -55,7 +57,8 @@
                         </div>
                         <span><button type="submit" class="shadowfilter">Post</button></span>
                     </div>
-                </div></form>
+                </div>
+            </form>
                 <!------------------------other tweet----------------------------------->
                     <!------------------------each person------------------------------------->
                 <div class="others-tweet">

@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController; //new
+
+Route::resource('posts', PostController::class); //new
 
 /*
 |--------------------------------------------------------------------------
